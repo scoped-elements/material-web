@@ -4,17 +4,20 @@
   "description": "Webcomponent ui-ui following open-wc recommendations",
   "author": "guillem.cordoba@gmail.com",
   "license": "MIT",
-  "main": "dist/index.js",
-  "module": "dist/index.js",
+  "files": [
+    "./"
+  ],
   "scripts": {
     "start": "concurrently --kill-others --names tsc,web-dev-server \"npm run build-watch\" \"sleep 5 && web-dev-server --config demo/web-dev-server.config.mjs\"",
     "build-watch": "rollup -c rollup.config.js -w",
-    "build": "rimraf dist && rollup -c rollup.config.js",
+    "clean": "rimraf dist",
+    "build": "npm run clean && rollup -c rollup.config.js",
     "prepublish": "npm run build",
     "lint": "eslint --ext .ts,.html . --ignore-path .gitignore",
     "format": "eslint --ext .ts,.html . --fix --ignore-path .gitignore",
     "test": "tsc && web-test-runner --coverage",
-    "test:watch": "web-test-runner --watch"
+    "test:watch": "web-test-runner --watch",
+    "publish-to-branch": "npm run lint && npm run build && cp package.json && gh-pages -d dist -b build"
   },
   "dependencies": {
     "@material/mwc-button": "^0.20.0",
@@ -69,6 +72,7 @@
     "lint-staged": "^10.0.0",
     "prettier": "^2.0.4",
     "rimraf": "^3.0.2",
+    "rollup-plugin-multi-input": "^1.1.1",
     "rollup-plugin-node-builtins": "^2.1.2",
     "tslib": "^1.11.0",
     "typescript": "~4.0.3"
