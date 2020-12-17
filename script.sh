@@ -48,10 +48,13 @@ camelCase=(
     TabIndicator
     TabScroller
     Tab
-    Textarea
-    Textfield
+    TextArea
+    TextField
     TopAppBarFixed
     TopAppBar
+    CheckListItem
+    ListItem
+    RadioListItem
     MenuSurface
     Button
     CircularProgressFourColor
@@ -64,11 +67,11 @@ camelCase=(
     Icon
 )
 for i in "${!strings[@]}"; do
-    echo "import { ${camelCase[$i]}Base } from '@material/mwc-${strings[$i]}/mwc-${strings[$i]}-base';
-import { style } from '@material/mwc-${strings[$i]}/mwc-${strings[$i]}-css';
-
-export class ${camelCase[$i]} extends ${camelCase[$i]}Base {
-  static styles = style;
+    echo "
+declare global {
+  interface HTMLElementTagNameMap {
+    [key: string]: any
+  }
 }
-" > src/components/mwc-${strings[$i]}.ts
+" >> src/mwc-${strings[$i]}.ts
 done
