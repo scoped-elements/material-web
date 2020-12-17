@@ -1,26 +1,20 @@
-import { _ as __decorate, c as customElement, q as query, p as property } from './decorators-47203ba8.js';
-import { h as html } from './lit-element-6dc8ff87.js';
-import './base-element-9dfa4130.js';
+import { _ as __decorate } from './tslib.es6-2abbead4.js';
+import { query, property, html } from 'lit-element';
+import './base-element-66082abe.js';
 import './foundation-9806e19c.js';
-import './mwc-ripple-css-c770044e.js';
-import { c as classMap } from './class-map-322d8040.js';
-import './style-map-1dd13c69.js';
-import './mwc-ripple-bc76fb3c.js';
+import './mwc-ripple-css-243508a9.js';
+import { c as classMap } from './class-map-964cfe32.js';
+import './style-map-dbb87bda.js';
+import './mwc-ripple-e40013be.js';
 import './ripple-handlers-a617bd83.js';
-import { S as Scoped } from './ScopedElementMixin-161556eb.js';
-import './form-element-6746b4ce.js';
-import { i as ifDefined } from './if-defined-2d5d1c62.js';
+import { Scoped } from 'scoped-elements';
 import './observer-c2e992b9.js';
-import { L as ListItemBase, s as style$1 } from './mwc-list-item-css-b2fd91d6.js';
-import { s as style$2 } from './mwc-control-list-item-css-3b4b80db.js';
-import { s as style, R as RadioBase, a as Radio$1 } from './mwc-radio-6c011ab7.js';
-
-let Radio = class Radio extends RadioBase {
-};
-Radio.styles = style;
-Radio = __decorate([
-    customElement('mwc-radio')
-], Radio);
+import { L as ListItemBase, s as style } from './mwc-list-item-css-1f34efcb.js';
+import { s as style$1 } from './mwc-control-list-item-css-b817c11e.js';
+import './form-element-947b0ff3.js';
+import { i as ifDefined } from './if-defined-3b25f6b6.js';
+import '@material/mwc-radio';
+import { Radio } from './mwc-radio.js';
 
 /**
  @license
@@ -107,11 +101,11 @@ __decorate([
 class RadioListItem extends Scoped(RadioListItemBase) {
     static get scopedElements() {
         return {
-            'mwc-radio': Radio$1,
+            'mwc-radio': Radio,
         };
     }
 }
-RadioListItem.styles = [style$1, style$2];
+RadioListItem.styles = [style, style$1];
 
 export { RadioListItem };
 //# sourceMappingURL=mwc-radio-list-item.js.map

@@ -1,4 +1,4 @@
-import './lit-element-6dc8ff87.js';
-export { I as Icon } from './mwc-icon-b44aeeae.js';
-import './ScopedElementMixin-161556eb.js';
+import 'lit-element';
+export { I as Icon } from './mwc-icon-661e3ac3.js';
+import 'scoped-elements';
 //# sourceMappingURL=mwc-icon.js.map

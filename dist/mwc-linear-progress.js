@@ -1,8 +1,8 @@
-import { _ as __decorate, q as query, p as property, i as internalProperty } from './decorators-47203ba8.js';
-import { L as LitElement, h as html, c as css } from './lit-element-6dc8ff87.js';
-import { c as classMap } from './class-map-322d8040.js';
-import { s as styleMap } from './style-map-1dd13c69.js';
-import { i as ifDefined } from './if-defined-2d5d1c62.js';
+import { _ as __decorate } from './tslib.es6-2abbead4.js';
+import { query, property, internalProperty, LitElement, html, css } from 'lit-element';
+import { c as classMap } from './class-map-964cfe32.js';
+import { s as styleMap } from './style-map-dbb87bda.js';
+import { i as ifDefined } from './if-defined-3b25f6b6.js';
 
 /** @soyCompatible */
 class LinearProgressBase extends LitElement {
