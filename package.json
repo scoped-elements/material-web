@@ -20,6 +20,10 @@
     "publish-to-branch": "npm run build && gh-pages -d ./ -b build"
   },
   "dependencies": {
+    "lit-element": "^2.4.0",
+    "scoped-elements": "git+https://github.com/guillemcordoba/scoped-elements.git"
+  },
+  "devDependencies": {
     "@material/mwc-button": "^0.20.0",
     "@material/mwc-checkbox": "^0.20.0",
     "@material/mwc-circular-progress": "^0.20.0",
@@ -49,10 +53,6 @@
     "@material/mwc-textfield": "^0.20.0",
     "@material/mwc-top-app-bar": "^0.20.0",
     "@material/mwc-top-app-bar-fixed": "^0.20.0",
-    "lit-element": "^2.4.0",
-    "scoped-elements": "git+https://github.com/guillemcordoba/scoped-elements.git"
-  },
-  "devDependencies": {
     "@open-wc/eslint-config": "^4.0.0",
     "@open-wc/testing": "^2.0.0",
     "@rollup/plugin-commonjs": "^15.1.0",
