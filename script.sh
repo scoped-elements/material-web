@@ -68,10 +68,6 @@ camelCase=(
 )
 for i in "${!strings[@]}"; do
     echo "
-declare global {
-  interface HTMLElementTagNameMap {
-    [key: string]: any
-  }
-}
+import * from './declare';
 " >> src/mwc-${strings[$i]}.ts
 done
