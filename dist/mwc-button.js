@@ -210,6 +210,9 @@ class Button extends Scoped(ButtonBase) {
     }
 }
 Button.styles = style;
+__decorate([
+    queryAsync('.ripple')
+], Button.prototype, "ripple", void 0);
 
 export { Button };
 //# sourceMappingURL=mwc-button.js.map
