@@ -812,92 +812,28 @@ if (typeof window !== 'undefined') {
  * subject to an additional IP rights grant found at
  * http://polymer.github.io/PATENTS.txt
  */
-// IE11 doesn't support classList on SVG elements, so we emulate it with a Set
-class ClassList {
-    constructor(element) {
-        this.classes = new Set();
-        this.changed = false;
-        this.element = element;
-        const classList = (element.getAttribute('class') || '').split(/\s+/);
-        for (const cls of classList) {
-            this.classes.add(cls);
-        }
-    }
-    add(cls) {
-        this.classes.add(cls);
-        this.changed = true;
-    }
-    remove(cls) {
-        this.classes.delete(cls);
-        this.changed = true;
-    }
-    commit() {
-        if (this.changed) {
-            let classString = '';
-            this.classes.forEach((cls) => classString += cls + ' ');
-            this.element.setAttribute('class', classString);
-        }
-    }
-}
+const previousValues = new WeakMap();
 /**
- * Stores the ClassInfo object applied to a given AttributePart.
- * Used to unset existing values when a new ClassInfo object is applied.
+ * For AttributeParts, sets the attribute if the value is defined and removes
+ * the attribute if the value is undefined.
+ *
+ * For other part types, this directive is a no-op.
  */
-const previousClassesCache = new WeakMap();
-/**
- * A directive that applies CSS classes. This must be used in the `class`
- * attribute and must be the only part used in the attribute. It takes each
- * property in the `classInfo` argument and adds the property name to the
- * element's `class` if the property value is truthy; if the property value is
- * falsey, the property name is removed from the element's `class`. For example
- * `{foo: bar}` applies the class `foo` if the value of `bar` is truthy.
- * @param classInfo {ClassInfo}
- */
-const classMap = directive((classInfo) => (part) => {
-    if (!(part instanceof AttributePart) || (part instanceof PropertyPart) ||
-        part.committer.name !== 'class' || part.committer.parts.length > 1) {
-        throw new Error('The `classMap` directive must be used in the `class` attribute ' +
-            'and must be the only part in the attribute.');
-    }
-    const { committer } = part;
-    const { element } = committer;
-    let previousClasses = previousClassesCache.get(part);
-    if (previousClasses === undefined) {
-        // Write static classes once
-        // Use setAttribute() because className isn't a string on SVG elements
-        element.setAttribute('class', committer.strings.join(' '));
-        previousClassesCache.set(part, previousClasses = new Set());
-    }
-    const classList = (element.classList || new ClassList(element));
-    // Remove old classes that no longer apply
-    // We use forEach() instead of for-of so that re don't require down-level
-    // iteration.
-    previousClasses.forEach((name) => {
-        if (!(name in classInfo)) {
-            classList.remove(name);
-            previousClasses.delete(name);
-        }
-    });
-    // Add or remove classes based on their classMap value
-    for (const name in classInfo) {
-        const value = classInfo[name];
-        if (value != previousClasses.has(name)) {
-            // We explicitly want a loose truthy check of `value` because it seems
-            // more convenient that '' and 0 are skipped.
-            if (value) {
-                classList.add(name);
-                previousClasses.add(name);
-            }
-            else {
-                classList.remove(name);
-                previousClasses.delete(name);
-            }
+const ifDefined = directive((value) => (part) => {
+    const previousValue = previousValues.get(part);
+    if (value === undefined && part instanceof AttributePart) {
+        // If the value is undefined, remove the attribute, but only if the value
+        // was previously defined.
+        if (previousValue !== undefined || !previousValues.has(part)) {
+            const name = part.committer.name;
+            part.committer.element.removeAttribute(name);
         }
     }
-    if (typeof classList.commit === 'function') {
-        classList.commit();
+    else if (value !== previousValue) {
+        part.setValue(value);
     }
+    previousValues.set(part, value);
 });
 
-export { AttributePart as A, BooleanAttributePart as B, EventPart as E, NodePart as N, PropertyPart as P, classMap as c, directive as d, nothing as n };
-//# sourceMappingURL=class-map-964cfe32.js.map
+export { AttributePart as A, BooleanAttributePart as B, EventPart as E, NodePart as N, PropertyPart as P, directive as d, ifDefined as i };
+//# sourceMappingURL=if-defined-91124828.js.map

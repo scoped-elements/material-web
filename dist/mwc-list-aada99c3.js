@@ -1,11 +1,11 @@
 import { _ as __decorate } from './tslib.es6-2abbead4.js';
 import { customElement, property, query, html, css } from 'lit-element';
+import { Scoped } from 'scoped-elements';
 import { f as findAssignedElement, B as BaseElement, i as isNodeElement, d as doesElementContainFocus, b as deepActiveElementPath } from './base-element-66082abe.js';
 import { M as MDCFoundation } from './foundation-9806e19c.js';
-import { Scoped } from 'scoped-elements';
 import { o as observer } from './observer-c2e992b9.js';
-import { s as style$1, L as ListItemBase } from './mwc-list-item-css-1f34efcb.js';
-import { i as ifDefined } from './if-defined-3b25f6b6.js';
+import { s as style$1, L as ListItemBase } from './mwc-list-item-css-3c8c3d4c.js';
+import { i as ifDefined } from './if-defined-91124828.js';
 
 /**
 @license
@@ -1189,4 +1189,4 @@ class List extends Scoped(ListBase) {
 List.styles = style;
 
 export { KEY as K, List as L, normalizeKey as a, cssClasses as c, numbers as n };
-//# sourceMappingURL=mwc-list-45aae433.js.map
+//# sourceMappingURL=mwc-list-aada99c3.js.map

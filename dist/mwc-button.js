@@ -1,27 +1,13 @@
 import { _ as __decorate } from './tslib.es6-2abbead4.js';
-import { customElement, LitElement, html, property, query, queryAsync, internalProperty, eventOptions, css } from 'lit-element';
-import { s as style$1, I as Icon$1 } from './mwc-icon-661e3ac3.js';
+import { R as RippleHandlers } from './ripple-handlers-a617bd83.js';
+import { property, query, queryAsync, internalProperty, eventOptions, LitElement, html, css } from 'lit-element';
+import { classMap } from 'lit-html/directives/class-map';
+import { Scoped } from 'scoped-elements';
+import { Icon } from './mwc-icon.js';
 import './base-element-66082abe.js';
 import './foundation-9806e19c.js';
-import './mwc-ripple-css-243508a9.js';
-import { c as classMap } from './class-map-964cfe32.js';
-import './style-map-dbb87bda.js';
-import './mwc-ripple-e40013be.js';
-import { R as RippleHandlers } from './ripple-handlers-a617bd83.js';
-import { Scoped } from 'scoped-elements';
 import { Ripple } from './mwc-ripple.js';
-
-/** @soyCompatible */
-let Icon = class Icon extends LitElement {
-    /** @soyTemplate */
-    render() {
-        return html `<slot></slot>`;
-    }
-};
-Icon.styles = style$1;
-Icon = __decorate([
-    customElement('mwc-icon')
-], Icon);
+import 'lit-html/directives/style-map';
 
 /** @soyCompatible */
 class ButtonBase extends LitElement {
@@ -215,7 +201,7 @@ const style = css `.mdc-touch-target-wrapper{display:inline}.mdc-elevation-overl
 class Button extends Scoped(ButtonBase) {
     static get scopedElements() {
         return {
-            'mwc-icon': Icon$1,
+            'mwc-icon': Icon,
             'mwc-ripple': Ripple,
         };
     }

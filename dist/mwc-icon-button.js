@@ -1,14 +1,12 @@
 import { _ as __decorate } from './tslib.es6-2abbead4.js';
+import { R as RippleHandlers } from './ripple-handlers-a617bd83.js';
 import { property, query, queryAsync, internalProperty, eventOptions, LitElement, html } from 'lit-element';
+import 'lit-html/directives/class-map';
+import { Scoped } from 'scoped-elements';
 import './base-element-66082abe.js';
 import './foundation-9806e19c.js';
-import './mwc-ripple-css-243508a9.js';
-import './class-map-964cfe32.js';
-import './style-map-dbb87bda.js';
-import './mwc-ripple-e40013be.js';
-import { R as RippleHandlers } from './ripple-handlers-a617bd83.js';
-import { Scoped } from 'scoped-elements';
 import { Ripple } from './mwc-ripple.js';
+import 'lit-html/directives/style-map';
 import { s as style } from './mwc-icon-button-css-4fafa060.js';
 
 /** @soyCompatible */

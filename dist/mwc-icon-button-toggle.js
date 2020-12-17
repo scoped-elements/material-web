@@ -1,12 +1,8 @@
 import { a as __extends, b as __assign, _ as __decorate } from './tslib.es6-2abbead4.js';
+import { R as RippleHandlers } from './ripple-handlers-a617bd83.js';
 import { query, property, queryAsync, internalProperty, eventOptions, html } from 'lit-element';
 import { B as BaseElement, a as addHasRemoveClass } from './base-element-66082abe.js';
 import { M as MDCFoundation } from './foundation-9806e19c.js';
-import './mwc-ripple-css-243508a9.js';
-import './class-map-964cfe32.js';
-import './style-map-dbb87bda.js';
-import './mwc-ripple-e40013be.js';
-import { R as RippleHandlers } from './ripple-handlers-a617bd83.js';
 import { o as observer } from './observer-c2e992b9.js';
 import { s as style } from './mwc-icon-button-css-4fafa060.js';
 

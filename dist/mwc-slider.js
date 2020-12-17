@@ -1,8 +1,8 @@
 import { a as __extends, b as __assign, _ as __decorate } from './tslib.es6-2abbead4.js';
 import { query, property, eventOptions, html, css } from 'lit-element';
+import { classMap } from 'lit-html/directives/class-map';
 import { a as addHasRemoveClass } from './base-element-66082abe.js';
-import { c as classMap } from './class-map-964cfe32.js';
-import { s as styleMap } from './style-map-dbb87bda.js';
+import { styleMap } from 'lit-html/directives/style-map';
 import { o as observer } from './observer-c2e992b9.js';
 import { F as FormElement } from './form-element-947b0ff3.js';
 import { a as applyPassive } from './events-11e39ea0.js';

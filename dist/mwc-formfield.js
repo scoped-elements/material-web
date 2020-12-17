@@ -1,8 +1,8 @@
 import { a as __extends, b as __assign, _ as __decorate } from './tslib.es6-2abbead4.js';
 import { property, query, html, css } from 'lit-element';
+import { classMap } from 'lit-html/directives/class-map';
 import { B as BaseElement, f as findAssignedElement } from './base-element-66082abe.js';
 import { M as MDCFoundation } from './foundation-9806e19c.js';
-import { c as classMap } from './class-map-964cfe32.js';
 import { o as observer } from './observer-c2e992b9.js';
 import { F as FormElement } from './form-element-947b0ff3.js';
 

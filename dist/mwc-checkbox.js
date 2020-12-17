@@ -1,16 +1,14 @@
 import { _ as __decorate } from './tslib.es6-2abbead4.js';
+import { R as RippleHandlers } from './ripple-handlers-a617bd83.js';
 import { query, property, internalProperty, queryAsync, eventOptions, html, css } from 'lit-element';
+import { classMap } from 'lit-html/directives/class-map';
+import { Scoped } from 'scoped-elements';
 import './base-element-66082abe.js';
 import './foundation-9806e19c.js';
-import './mwc-ripple-css-243508a9.js';
-import { c as classMap } from './class-map-964cfe32.js';
-import './style-map-dbb87bda.js';
-import './mwc-ripple-e40013be.js';
-import { R as RippleHandlers } from './ripple-handlers-a617bd83.js';
-import { Scoped } from 'scoped-elements';
 import { Ripple } from './mwc-ripple.js';
+import 'lit-html/directives/style-map';
 import { F as FormElement } from './form-element-947b0ff3.js';
-import { i as ifDefined } from './if-defined-3b25f6b6.js';
+import { i as ifDefined } from './if-defined-91124828.js';
 
 /** @soyCompatible */
 class CheckboxBase extends FormElement {
