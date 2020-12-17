@@ -17,7 +17,7 @@
     "format": "eslint --ext .ts,.html . --fix --ignore-path .gitignore",
     "test": "tsc && web-test-runner --coverage",
     "test:watch": "web-test-runner --watch",
-    "publish-to-branch": "npm run lint && npm run build && cp package.json && gh-pages -d dist -b build"
+    "publish-to-branch": "npm run build && cp package.json && gh-pages -d dist -b build"
   },
   "dependencies": {
     "@material/mwc-button": "^0.20.0",
