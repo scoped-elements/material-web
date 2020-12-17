@@ -14,9 +14,4 @@ export declare class TabBar extends TabBar_base {
         'mwc-tab-scroller': typeof TabScroller;
     };
 }
-declare global {
-    interface HTMLElementTagNameMap {
-        [key: string]: any;
-    }
-}
 export {};

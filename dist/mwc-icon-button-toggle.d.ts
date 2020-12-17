@@ -2,8 +2,3 @@ import { IconButtonToggleBase } from '@material/mwc-icon-button-toggle/mwc-icon-
 export declare class IconButtonToggle extends IconButtonToggleBase {
     static styles: import("lit-element").CSSResult;
 }
-declare global {
-    interface HTMLElementTagNameMap {
-        [key: string]: any;
-    }
-}

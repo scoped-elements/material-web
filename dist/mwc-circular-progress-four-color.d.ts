@@ -2,8 +2,3 @@ import { CircularProgressFourColorBase } from '@material/mwc-circular-progress-f
 export declare class CircularProgressFourColor extends CircularProgressFourColorBase {
     static styles: import("lit-element").CSSResult;
 }
-declare global {
-    interface HTMLElementTagNameMap {
-        [key: string]: any;
-    }
-}

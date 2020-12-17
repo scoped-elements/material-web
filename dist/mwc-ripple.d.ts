@@ -8,9 +8,4 @@ declare const Ripple_base: typeof RippleBase & import("lit-element").Constructor
 export declare class Ripple extends Ripple_base {
     static styles: import("lit-element").CSSResult;
 }
-declare global {
-    interface HTMLElementTagNameMap {
-        [key: string]: any;
-    }
-}
 export {};

@@ -5,9 +5,4 @@ export class MenuSurface extends MenuSurfaceBase {
   static styles = style;
 }
 
-declare global {
-  interface HTMLElementTagNameMap {
-    [key: string]: any
-  }
-}
 

@@ -6,9 +6,4 @@ export class TopAppBar extends TopAppBarBase {
 }
 
 
-declare global {
-  interface HTMLElementTagNameMap {
-    [key: string]: any
-  }
-}
 

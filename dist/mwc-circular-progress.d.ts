@@ -2,8 +2,3 @@ import { CircularProgressBase } from '@material/mwc-circular-progress/mwc-circul
 export declare class CircularProgress extends CircularProgressBase {
     static styles: import("lit-element").CSSResult;
 }
-declare global {
-    interface HTMLElementTagNameMap {
-        [key: string]: any;
-    }
-}

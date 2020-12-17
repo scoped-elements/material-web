@@ -5,9 +5,4 @@ export class CircularProgress extends CircularProgressBase {
   static styles = style;
 }
 
-declare global {
-  interface HTMLElementTagNameMap {
-    [key: string]: any
-  }
-}
 

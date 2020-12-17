@@ -13,9 +13,4 @@ export class ListItem extends Scoped(ListItemBase) {
 }
 
 
-declare global {
-  interface HTMLElementTagNameMap {
-    [key: string]: any
-  }
-}
 

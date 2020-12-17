@@ -12,9 +12,4 @@ export declare class Switch extends Switch_base {
         'mwc-ripple': typeof Ripple;
     };
 }
-declare global {
-    interface HTMLElementTagNameMap {
-        [key: string]: any;
-    }
-}
 export {};

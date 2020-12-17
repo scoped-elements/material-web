@@ -6,9 +6,4 @@ export class TabScroller extends TabScrollerBase {
 }
 
 
-declare global {
-  interface HTMLElementTagNameMap {
-    [key: string]: any
-  }
-}
 

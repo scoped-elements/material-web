@@ -13,9 +13,4 @@ export class CheckListItem extends Scoped(CheckListItemBase) {
   static styles = [style, controlStyle];
 }
 
-declare global {
-  interface HTMLElementTagNameMap {
-    [key: string]: any
-  }
-}
 
