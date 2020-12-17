@@ -9,7 +9,13 @@ export default {
   input: ['src/**/*.ts'],
   output: [{ dir: 'dist', format: 'es', sourcemap: true }],
   // Indicate here external modules you don't wanna include in your bundle (i.e.: 'lodash-es')
-  external: ['node_modules/**/*',...Object.keys(pkg.dependencies).filter(key => !key.startsWith('mwc'))],
+  external: [
+    'lit-html',
+    'lit-element',
+    'lit-html/directives/class-map',
+    'lit-html/directives/style-map',
+    ...Object.keys(pkg.dependencies).filter(key => !key.startsWith('mwc')),
+  ],
   watch: {
     include: 'src/**',
   },
@@ -17,6 +23,11 @@ export default {
     multiInput(),
     replace({
       'window.customElements.define(tagName, clazz);': '',
+      "import { Icon } '@material/mwc-icon/mwc-icon'": '',
+      "import '@material/mwc-icon/mwc-icon'": '',
+      "import '@material/mwc-ripple/mwc-ripple'": '',
+      "import { Ripple } from '@material/mwc-ripple/mwc-ripple'": '',
+
       delimiters: ['', ''],
     }),
     typescript(),
