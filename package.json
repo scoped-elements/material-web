@@ -5,7 +5,7 @@
   "author": "guillem.cordoba@gmail.com",
   "license": "MIT",
   "files": [
-    "./"
+    "dist"
   ],
   "scripts": {
     "start": "concurrently --kill-others --names tsc,web-dev-server \"npm run build-watch\" \"sleep 5 && web-dev-server --config demo/web-dev-server.config.mjs\"",
@@ -17,7 +17,7 @@
     "format": "eslint --ext .ts,.html . --fix --ignore-path .gitignore",
     "test": "tsc && web-test-runner --coverage",
     "test:watch": "web-test-runner --watch",
-    "publish-to-branch": "npm run build && cp package.json dist && gh-pages -d dist -b build"
+    "publish-to-branch": "npm run build && gh-pages -d ./ -b build"
   },
   "dependencies": {
     "lit-element": "^2.4.0",
