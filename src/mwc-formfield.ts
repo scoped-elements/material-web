@@ -6,9 +6,4 @@ export class Formfield extends FormfieldBase {
 }
 
 
-declare global {
-  interface HTMLElementTagNameMap {
-    [key: string]: any
-  }
-}
 

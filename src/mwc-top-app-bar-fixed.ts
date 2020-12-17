@@ -6,9 +6,4 @@ export class TopAppBarFixed extends TopAppBarFixedBase {
 }
 
 
-declare global {
-  interface HTMLElementTagNameMap {
-    [key: string]: any
-  }
-}
 

@@ -12,9 +12,4 @@ export class Fab extends Scoped(FabBase) {
   static styles = style;
 }
 
-declare global {
-  interface HTMLElementTagNameMap {
-    [key: string]: any
-  }
-}
 

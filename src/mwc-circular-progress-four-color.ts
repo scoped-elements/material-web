@@ -5,9 +5,4 @@ export class CircularProgressFourColor extends CircularProgressFourColorBase {
   static styles = style;
 }
 
-declare global {
-  interface HTMLElementTagNameMap {
-    [key: string]: any
-  }
-}
 

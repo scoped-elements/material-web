@@ -5,9 +5,4 @@ export class Drawer extends DrawerBase {
   static styles = style;
 }
 
-declare global {
-  interface HTMLElementTagNameMap {
-    [key: string]: any
-  }
-}
 

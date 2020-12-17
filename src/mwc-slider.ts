@@ -6,9 +6,4 @@ export class Slider extends SliderBase {
 }
 
 
-declare global {
-  interface HTMLElementTagNameMap {
-    [key: string]: any
-  }
-}
 

@@ -6,9 +6,4 @@ export class TextArea extends TextAreaBase {
 }
 
 
-declare global {
-  interface HTMLElementTagNameMap {
-    [key: string]: any
-  }
-}
 

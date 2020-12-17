@@ -12,9 +12,4 @@ export class Switch extends Scoped(SwitchBase) {
   }
 }
 
-declare global {
-  interface HTMLElementTagNameMap {
-    [key: string]: any
-  }
-}
 

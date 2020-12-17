@@ -6,9 +6,4 @@ export class TabIndicator extends TabIndicatorBase {
 }
 
 
-declare global {
-  interface HTMLElementTagNameMap {
-    [key: string]: any
-  }
-}
 

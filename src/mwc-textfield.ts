@@ -12,9 +12,4 @@ export class TextField extends Scoped(class extends TextFieldBase {}) {
   }
 }
 
-declare global {
-  interface HTMLElementTagNameMap {
-    [key: string]: any
-  }
-}
 
