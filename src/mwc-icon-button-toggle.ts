@@ -5,3 +5,10 @@ export class IconButtonToggle extends IconButtonToggleBase {
   static styles = style;
 }
 
+
+declare global {
+  interface HTMLElementTagNameMap {
+    [key: string]: any
+  }
+}
+

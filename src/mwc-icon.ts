@@ -11,3 +11,10 @@ export class Icon extends Scoped(LitElement) {
     return html`<slot></slot>`;
   }
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    [key: string]: any
+  }
+}
+

@@ -15,3 +15,10 @@ export class Select extends Scoped(class extends SelectBase {}) {
     };
   }
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    [key: string]: any
+  }
+}
+

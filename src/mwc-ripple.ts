@@ -5,3 +5,10 @@ import { Scoped } from 'scoped-elements';
 export class Ripple extends Scoped(RippleBase) {
   static styles = style;
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    [key: string]: any
+  }
+}
+

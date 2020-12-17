@@ -5,3 +5,9 @@ import {style} from '@material/mwc-dialog/mwc-dialog-css';
 export class Dialog extends DialogBase {
   static styles = style;
 }
+declare global {
+  interface HTMLElementTagNameMap {
+    [key: string]: any
+  }
+}
+

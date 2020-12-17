@@ -13,3 +13,10 @@ export class Menu extends Scoped(class extends MenuBase {}) {
   }
   static styles = style;
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    [key: string]: any
+  }
+}
+

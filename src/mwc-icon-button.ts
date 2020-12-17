@@ -11,3 +11,10 @@ export class IconButton extends Scoped(IconButtonBase) {
     };
   }
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    [key: string]: any
+  }
+}
+

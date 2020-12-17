@@ -5,3 +5,10 @@ export class TextArea extends TextAreaBase {
   static styles = style;
 }
 
+
+declare global {
+  interface HTMLElementTagNameMap {
+    [key: string]: any
+  }
+}
+
