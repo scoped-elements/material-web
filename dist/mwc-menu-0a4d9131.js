@@ -4,7 +4,7 @@ import { B as BaseElement } from './base-element-9dfa4130.js';
 import { M as MDCFoundation } from './foundation-9806e19c.js';
 import { S as Scoped } from './ScopedElementMixin-161556eb.js';
 import { o as observer } from './observer-c2e992b9.js';
-import { s as style$1, L as ListBase, c as cssClasses$1, a as List$1 } from './mwc-list-08fa7711.js';
+import { s as style$1, L as ListBase, c as cssClasses$1, a as List$1 } from './mwc-list-15442025.js';
 import { s as style$2, M as MenuSurfaceBase, a as MDCMenuSurfaceFoundation } from './mwc-menu-surface-css-7d29e88b.js';
 
 /**
@@ -636,8 +636,7 @@ limitations under the License.
 */
 const style = css `mwc-list ::slotted([mwc-list-item]:not([twoline])){height:var(--mdc-menu-item-height, 48px)}mwc-list{max-width:var(--mdc-menu-max-width, auto);min-width:var(--mdc-menu-min-width, auto)}`;
 
-class Menu extends Scoped(class extends MenuBase {
-}) {
+class Menu extends Scoped(MenuBase) {
     static get scopedElements() {
         return {
             'mwc-menu-surface': MenuSurface,
@@ -648,4 +647,4 @@ class Menu extends Scoped(class extends MenuBase {
 Menu.styles = style;
 
 export { MenuBase as M, Menu as a, style as s };
-//# sourceMappingURL=mwc-menu-12a29497.js.map
+//# sourceMappingURL=mwc-menu-0a4d9131.js.map

@@ -11,5 +11,5 @@ import './ScopedElementMixin-161556eb.js';
 import './if-defined-2d5d1c62.js';
 import './observer-c2e992b9.js';
 import './mwc-list-item-css-b2fd91d6.js';
-export { a as List } from './mwc-list-08fa7711.js';
+export { a as List } from './mwc-list-15442025.js';
 //# sourceMappingURL=mwc-list.js.map

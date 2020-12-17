@@ -11,7 +11,7 @@ import './ScopedElementMixin-161556eb.js';
 import './if-defined-2d5d1c62.js';
 import './observer-c2e992b9.js';
 import './mwc-list-item-css-b2fd91d6.js';
-import './mwc-list-08fa7711.js';
+import './mwc-list-15442025.js';
 import './mwc-menu-surface-css-7d29e88b.js';
-export { a as Menu } from './mwc-menu-12a29497.js';
+export { a as Menu } from './mwc-menu-0a4d9131.js';
 //# sourceMappingURL=mwc-menu.js.map
