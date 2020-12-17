@@ -13,3 +13,10 @@ export class Tab extends Scoped(TabBase) {
     };
   }
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    [key: string]: any
+  }
+}
+

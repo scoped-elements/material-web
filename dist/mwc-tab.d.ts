@@ -14,4 +14,9 @@ export declare class Tab extends Tab_base {
         'mwc-ripple': typeof Ripple;
     };
 }
+declare global {
+    interface HTMLElementTagNameMap {
+        [key: string]: any;
+    }
+}
 export {};

@@ -12,3 +12,10 @@ export class ListItem extends Scoped(ListItemBase) {
   static styles = style;
 }
 
+
+declare global {
+  interface HTMLElementTagNameMap {
+    [key: string]: any
+  }
+}
+

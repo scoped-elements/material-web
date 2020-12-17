@@ -11,3 +11,10 @@ export class List extends Scoped(class extends ListBase {}) {
   }
   static styles = style;
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    [key: string]: any
+  }
+}
+

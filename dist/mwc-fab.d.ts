@@ -12,4 +12,9 @@ export declare class Fab extends Fab_base {
     };
     static styles: import("lit-element").CSSResult;
 }
+declare global {
+    interface HTMLElementTagNameMap {
+        [key: string]: any;
+    }
+}
 export {};

@@ -12,4 +12,9 @@ export declare class RadioListItem extends RadioListItem_base {
         'mwc-radio': typeof Radio;
     };
 }
+declare global {
+    interface HTMLElementTagNameMap {
+        [key: string]: any;
+    }
+}
 export {};

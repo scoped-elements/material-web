@@ -10,4 +10,9 @@ export declare class Icon extends Icon_base {
     /** @soyTemplate */
     protected render(): TemplateResult;
 }
+declare global {
+    interface HTMLElementTagNameMap {
+        [key: string]: any;
+    }
+}
 export {};

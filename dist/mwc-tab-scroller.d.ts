@@ -2,3 +2,8 @@ import { TabScrollerBase } from '@material/mwc-tab-scroller/mwc-tab-scroller-bas
 export declare class TabScroller extends TabScrollerBase {
     static styles: import("lit-element").CSSResult;
 }
+declare global {
+    interface HTMLElementTagNameMap {
+        [key: string]: any;
+    }
+}

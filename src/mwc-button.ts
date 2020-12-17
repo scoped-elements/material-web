@@ -14,3 +14,10 @@ export class Button extends Scoped(ButtonBase) {
 
   static styles = style;
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    [key: string]: any
+  }
+}
+

@@ -4,3 +4,10 @@ import { style } from '@material/mwc-circular-progress-four-color/mwc-circular-p
 export class CircularProgressFourColor extends CircularProgressFourColorBase {
   static styles = style;
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    [key: string]: any
+  }
+}
+

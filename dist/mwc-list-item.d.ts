@@ -12,4 +12,9 @@ export declare class ListItem extends ListItem_base {
     };
     static styles: import("lit-element").CSSResult;
 }
+declare global {
+    interface HTMLElementTagNameMap {
+        [key: string]: any;
+    }
+}
 export {};

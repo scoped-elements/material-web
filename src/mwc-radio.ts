@@ -5,3 +5,10 @@ export class Radio extends RadioBase {
   static styles = style;
 }
 
+
+declare global {
+  interface HTMLElementTagNameMap {
+    [key: string]: any
+  }
+}
+

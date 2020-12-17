@@ -14,3 +14,10 @@ export class RadioListItem extends Scoped(RadioListItemBase) {
     };
   }
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    [key: string]: any
+  }
+}
+

@@ -4,3 +4,10 @@ import { style } from '@material/mwc-notched-outline/mwc-notched-outline-css';
 export class NotchedOutline extends NotchedOutlineBase {
   static styles = style;
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    [key: string]: any
+  }
+}
+

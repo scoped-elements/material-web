@@ -4,3 +4,10 @@ import { style } from '@material/mwc-drawer/mwc-drawer-css';
 export class Drawer extends DrawerBase {
   static styles = style;
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    [key: string]: any
+  }
+}
+

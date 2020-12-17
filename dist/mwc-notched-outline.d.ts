@@ -2,3 +2,8 @@ import { NotchedOutlineBase } from '@material/mwc-notched-outline/mwc-notched-ou
 export declare class NotchedOutline extends NotchedOutlineBase {
     static styles: import("lit-element").CSSResult;
 }
+declare global {
+    interface HTMLElementTagNameMap {
+        [key: string]: any;
+    }
+}

@@ -5,3 +5,10 @@ export class Slider extends SliderBase {
   static styles = style;
 }
 
+
+declare global {
+  interface HTMLElementTagNameMap {
+    [key: string]: any
+  }
+}
+

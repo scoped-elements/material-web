@@ -2,3 +2,8 @@ import { TabIndicatorBase } from '@material/mwc-tab-indicator/mwc-tab-indicator-
 export declare class TabIndicator extends TabIndicatorBase {
     static styles: import("lit-element").CSSResult;
 }
+declare global {
+    interface HTMLElementTagNameMap {
+        [key: string]: any;
+    }
+}
