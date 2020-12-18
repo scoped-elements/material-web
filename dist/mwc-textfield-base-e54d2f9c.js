@@ -1,13 +1,12 @@
 import { a as __extends, b as __assign, _ as __decorate } from './tslib.es6-2abbead4.js';
 import { query, property, internalProperty, eventOptions, html } from 'lit-element';
 import { classMap } from 'lit-html/directives/class-map';
-import { a as addHasRemoveClass } from './base-element-66082abe.js';
-import { M as MDCFoundation } from './foundation-9806e19c.js';
+import { MDCFoundation } from '@material/base/foundation';
 import { o as observer } from './observer-c2e992b9.js';
-import { F as FormElement } from './form-element-947b0ff3.js';
+import { FormElement, addHasRemoveClass } from '@material/mwc-base/form-element';
 import { ifDefined } from 'lit-html/directives/if-defined';
 import '@material/mwc-notched-outline';
-import { f as floatingLabel, l as lineRipple } from './mwc-line-ripple-directive-402c6d28.js';
+import { f as floatingLabel, l as lineRipple } from './mwc-line-ripple-directive-6a79bf78.js';
 import { live } from 'lit-html/directives/live';
 
 /**
@@ -1184,4 +1183,4 @@ __decorate([
 ], TextFieldBase.prototype, "handleInputChange", null);
 
 export { TextFieldBase as T };
-//# sourceMappingURL=mwc-textfield-base-60c147e7.js.map
+//# sourceMappingURL=mwc-textfield-base-e54d2f9c.js.map

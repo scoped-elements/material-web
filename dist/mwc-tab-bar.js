@@ -1,13 +1,14 @@
 import { a as __extends, b as __assign, _ as __decorate } from './tslib.es6-2abbead4.js';
-import './ripple-handlers-a617bd83.js';
+import '@material/mwc-ripple/ripple-handlers';
 import { query, property, html, css } from 'lit-element';
 import 'lit-html/directives/class-map';
 import { Scoped } from 'scoped-elements';
-import { B as BaseElement } from './base-element-66082abe.js';
-import { M as MDCFoundation } from './foundation-9806e19c.js';
+import { BaseElement } from '@material/mwc-base/base-element';
+import { MDCFoundation } from '@material/base/foundation';
 import './mwc-ripple.js';
 import 'lit-html/directives/style-map';
 import { o as observer } from './observer-c2e992b9.js';
+import './ponyfill-f805c928.js';
 import { Tab } from '@material/mwc-tab';
 import '@material/mwc-tab-scroller';
 import '@material/mwc-tab-indicator';

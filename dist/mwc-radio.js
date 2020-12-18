@@ -1,11 +1,10 @@
 import { a as __extends, b as __assign, _ as __decorate } from './tslib.es6-2abbead4.js';
-import { R as RippleHandlers } from './ripple-handlers-a617bd83.js';
+import { RippleHandlers } from '@material/mwc-ripple/ripple-handlers';
 import { query, property, internalProperty, queryAsync, eventOptions, html, css } from 'lit-element';
 import { classMap } from 'lit-html/directives/class-map';
-import { a as addHasRemoveClass } from './base-element-66082abe.js';
-import { M as MDCFoundation } from './foundation-9806e19c.js';
+import { MDCFoundation } from '@material/base/foundation';
 import { o as observer } from './observer-c2e992b9.js';
-import { F as FormElement } from './form-element-947b0ff3.js';
+import { FormElement, addHasRemoveClass } from '@material/mwc-base/form-element';
 
 /**
  * @license

@@ -1,7 +1,8 @@
 import { a as __extends, b as __assign, d as __read, _ as __decorate } from './tslib.es6-2abbead4.js';
 import { query, eventOptions, html, css } from 'lit-element';
-import { B as BaseElement, a as addHasRemoveClass, m as matches } from './base-element-66082abe.js';
-import { M as MDCFoundation } from './foundation-9806e19c.js';
+import { BaseElement, addHasRemoveClass } from '@material/mwc-base/base-element';
+import { MDCFoundation } from '@material/base/foundation';
+import { m as matches } from './ponyfill-f805c928.js';
 
 /**
  * @license

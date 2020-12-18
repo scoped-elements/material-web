@@ -1,11 +1,11 @@
 import { _ as __decorate } from './tslib.es6-2abbead4.js';
-import { R as RippleHandlers } from './ripple-handlers-a617bd83.js';
+import { RippleHandlers } from '@material/mwc-ripple/ripple-handlers';
 import { property, query, queryAsync, internalProperty, eventOptions, LitElement, html, css } from 'lit-element';
 import { classMap } from 'lit-html/directives/class-map';
 import { Scoped } from 'scoped-elements';
 import { Icon } from './mwc-icon.js';
-import './base-element-66082abe.js';
-import './foundation-9806e19c.js';
+import '@material/mwc-base/base-element';
+import '@material/base/foundation';
 import { Ripple } from './mwc-ripple.js';
 import 'lit-html/directives/style-map';
 

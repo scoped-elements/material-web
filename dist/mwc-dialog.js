@@ -1,11 +1,12 @@
 import { a as __extends, b as __assign, _ as __decorate } from './tslib.es6-2abbead4.js';
 import { query, property, html, css } from 'lit-element';
 import { classMap } from 'lit-html/directives/class-map';
-import { B as BaseElement, a as addHasRemoveClass, m as matches, c as closest } from './base-element-66082abe.js';
-import { M as MDCFoundation } from './foundation-9806e19c.js';
+import { BaseElement, addHasRemoveClass } from '@material/mwc-base/base-element';
+import { MDCFoundation } from '@material/base/foundation';
 import { o as observer } from './observer-c2e992b9.js';
 import './inert-42304c1b.js';
 import { a as applyPassive } from './events-11e39ea0.js';
+import { m as matches, c as closest } from './ponyfill-f805c928.js';
 
 /**
  * @license

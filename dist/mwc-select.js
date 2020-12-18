@@ -1,25 +1,27 @@
 import { a as __extends, b as __assign, _ as __decorate } from './tslib.es6-2abbead4.js';
-import './ripple-handlers-a617bd83.js';
+import '@material/mwc-ripple/ripple-handlers';
 import { query, property, eventOptions, html, css } from 'lit-element';
 import { classMap } from 'lit-html/directives/class-map';
 import { Scoped } from 'scoped-elements';
 import { Icon } from './mwc-icon.js';
-import { a as addHasRemoveClass, i as isNodeElement } from './base-element-66082abe.js';
-import { M as MDCFoundation } from './foundation-9806e19c.js';
+import '@material/mwc-base/base-element';
+import { MDCFoundation } from '@material/base/foundation';
 import 'lit-html/directives/style-map';
 import { o as observer } from './observer-c2e992b9.js';
-import './mwc-list-item-css-3c8c3d4c.js';
-import { F as FormElement } from './form-element-947b0ff3.js';
+import './mwc-list-item-css-b4af150d.js';
+import { FormElement, addHasRemoveClass } from '@material/mwc-base/form-element';
 import { ifDefined } from 'lit-html/directives/if-defined';
-import { n as numbers$1, a as normalizeKey, K as KEY } from './mwc-list-29110ea2.js';
-import { C as Corner } from './mwc-menu-surface-css-a7e18791.js';
+import './ponyfill-f805c928.js';
+import { i as isNodeElement } from './utils-01a0fdcf.js';
+import { n as numbers$1, a as normalizeKey, K as KEY } from './mwc-list-cbdd5e78.js';
+import { C as Corner } from './mwc-menu-surface-css-72b88591.js';
 import '@material/mwc-list';
 import { Menu } from './mwc-menu.js';
 import { NotchedOutline } from './mwc-notched-outline.js';
 import '@material/mwc-notched-outline';
 import '@material/mwc-menu';
 import '@material/mwc-icon';
-import { f as floatingLabel, l as lineRipple } from './mwc-line-ripple-directive-402c6d28.js';
+import { f as floatingLabel, l as lineRipple } from './mwc-line-ripple-directive-6a79bf78.js';
 import { nothing } from 'lit-html';
 
 /**

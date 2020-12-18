@@ -17,6 +17,10 @@ export default {
     'lit-html/directives/style-map',
     'lit-html/directives/if-defined',
     'lit-html/directives/live',
+    '@material/mwc-ripple/ripple-handlers',
+    '@material/mwc-base/base-element',
+    '@material/mwc-base/form-element',
+    '@material/base/foundation',
     ...Object.keys(pkg.dependencies).filter(key => !key.startsWith('mwc')),
   ],
   watch: {

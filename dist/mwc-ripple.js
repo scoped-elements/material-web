@@ -2,8 +2,8 @@ import { a as __extends, b as __assign, _ as __decorate } from './tslib.es6-2abb
 import { query, property, internalProperty, html, css } from 'lit-element';
 import { classMap } from 'lit-html/directives/class-map';
 import { Scoped } from 'scoped-elements';
-import { B as BaseElement } from './base-element-66082abe.js';
-import { M as MDCFoundation } from './foundation-9806e19c.js';
+import { BaseElement } from '@material/mwc-base/base-element';
+import { MDCFoundation } from '@material/base/foundation';
 import { styleMap } from 'lit-html/directives/style-map';
 
 /**

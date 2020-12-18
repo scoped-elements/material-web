@@ -1,10 +1,12 @@
 import { a as __extends, b as __assign, _ as __decorate } from './tslib.es6-2abbead4.js';
 import { property, query, html, css } from 'lit-element';
 import { classMap } from 'lit-html/directives/class-map';
-import { B as BaseElement, f as findAssignedElement } from './base-element-66082abe.js';
-import { M as MDCFoundation } from './foundation-9806e19c.js';
+import { BaseElement } from '@material/mwc-base/base-element';
+import { MDCFoundation } from '@material/base/foundation';
 import { o as observer } from './observer-c2e992b9.js';
-import { F as FormElement } from './form-element-947b0ff3.js';
+import { FormElement } from '@material/mwc-base/form-element';
+import './ponyfill-f805c928.js';
+import { f as findAssignedElement } from './utils-01a0fdcf.js';
 
 /**
  * @license

@@ -1,13 +1,13 @@
 import { _ as __decorate } from './tslib.es6-2abbead4.js';
-import { R as RippleHandlers } from './ripple-handlers-a617bd83.js';
+import { RippleHandlers } from '@material/mwc-ripple/ripple-handlers';
 import { query, property, internalProperty, queryAsync, eventOptions, html, css } from 'lit-element';
 import { classMap } from 'lit-html/directives/class-map';
 import { Scoped } from 'scoped-elements';
-import './base-element-66082abe.js';
-import './foundation-9806e19c.js';
+import '@material/mwc-base/base-element';
+import '@material/base/foundation';
 import { Ripple } from './mwc-ripple.js';
 import 'lit-html/directives/style-map';
-import { F as FormElement } from './form-element-947b0ff3.js';
+import { FormElement } from '@material/mwc-base/form-element';
 import { ifDefined } from 'lit-html/directives/if-defined';
 
 /** @soyCompatible */
