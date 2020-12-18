@@ -7,6 +7,6 @@ import './base-element-66082abe.js';
 import './foundation-9806e19c.js';
 import './observer-c2e992b9.js';
 import './mwc-list-item-css-3c8c3d4c.js';
-import './if-defined-91124828.js';
-export { L as List } from './mwc-list-aada99c3.js';
+import 'lit-html/directives/if-defined';
+export { L as List } from './mwc-list-29110ea2.js';
 //# sourceMappingURL=mwc-list.js.map

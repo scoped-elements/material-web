@@ -2,7 +2,7 @@ import { _ as __decorate } from './tslib.es6-2abbead4.js';
 import { property, LitElement, html } from 'lit-element';
 import { classMap } from 'lit-html/directives/class-map';
 import { styleMap } from 'lit-html/directives/style-map';
-import { i as ifDefined } from './if-defined-91124828.js';
+import { ifDefined } from 'lit-html/directives/if-defined';
 
 /** @soyCompatible */
 class CircularProgressBase extends LitElement {
@@ -156,4 +156,4 @@ __decorate([
 ], CircularProgressBase.prototype, "ariaLabel", void 0);
 
 export { CircularProgressBase as C };
-//# sourceMappingURL=mwc-circular-progress-base-20e2f02a.js.map
+//# sourceMappingURL=mwc-circular-progress-base-8a959938.js.map

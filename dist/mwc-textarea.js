@@ -5,11 +5,12 @@ import './base-element-66082abe.js';
 import './foundation-9806e19c.js';
 import './observer-c2e992b9.js';
 import './form-element-947b0ff3.js';
-import { i as ifDefined } from './if-defined-91124828.js';
+import { ifDefined } from 'lit-html/directives/if-defined';
 import '@material/mwc-notched-outline';
 import './mwc-line-ripple-directive-402c6d28.js';
 import 'lit-html';
-import { T as TextFieldBase, l as live } from './mwc-textfield-base-b57c391e.js';
+import { T as TextFieldBase } from './mwc-textfield-base-60c147e7.js';
+import { live } from 'lit-html/directives/live';
 
 /**
 @license

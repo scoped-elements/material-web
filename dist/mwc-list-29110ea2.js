@@ -5,7 +5,7 @@ import { f as findAssignedElement, B as BaseElement, i as isNodeElement, d as do
 import { M as MDCFoundation } from './foundation-9806e19c.js';
 import { o as observer } from './observer-c2e992b9.js';
 import { s as style$1, L as ListItemBase } from './mwc-list-item-css-3c8c3d4c.js';
-import { i as ifDefined } from './if-defined-91124828.js';
+import { ifDefined } from 'lit-html/directives/if-defined';
 
 /**
 @license
@@ -1189,4 +1189,4 @@ class List extends Scoped(ListBase) {
 List.styles = style;
 
 export { KEY as K, List as L, normalizeKey as a, cssClasses as c, numbers as n };
-//# sourceMappingURL=mwc-list-aada99c3.js.map
+//# sourceMappingURL=mwc-list-29110ea2.js.map

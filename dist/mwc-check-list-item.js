@@ -12,7 +12,7 @@ import './observer-c2e992b9.js';
 import { L as ListItemBase, s as style } from './mwc-list-item-css-3c8c3d4c.js';
 import { s as style$1 } from './mwc-control-list-item-css-b817c11e.js';
 import './form-element-947b0ff3.js';
-import './if-defined-91124828.js';
+import 'lit-html/directives/if-defined';
 import { Checkbox } from './mwc-checkbox.js';
 
 /**

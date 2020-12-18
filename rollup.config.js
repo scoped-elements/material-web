@@ -10,10 +10,13 @@ export default {
   output: [{ dir: 'dist', format: 'es', sourcemap: true }],
   // Indicate here external modules you don't wanna include in your bundle (i.e.: 'lodash-es')
   external: [
+    'ts-lib.es6',
     'lit-html',
     'lit-element',
     'lit-html/directives/class-map',
     'lit-html/directives/style-map',
+    'lit-html/directives/if-defined',
+    'lit-html/directives/live',
     ...Object.keys(pkg.dependencies).filter(key => !key.startsWith('mwc')),
   ],
   watch: {

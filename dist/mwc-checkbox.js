@@ -8,7 +8,7 @@ import './foundation-9806e19c.js';
 import { Ripple } from './mwc-ripple.js';
 import 'lit-html/directives/style-map';
 import { F as FormElement } from './form-element-947b0ff3.js';
-import { i as ifDefined } from './if-defined-91124828.js';
+import { ifDefined } from 'lit-html/directives/if-defined';
 
 /** @soyCompatible */
 class CheckboxBase extends FormElement {
