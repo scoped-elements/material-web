@@ -4,9 +4,6 @@
   "description": "Webcomponent ui-ui following open-wc recommendations",
   "author": "guillem.cordoba@gmail.com",
   "license": "MIT",
-  "files": [
-    "dist"
-  ],
   "scripts": {
     "start": "concurrently --kill-others --names tsc,web-dev-server \"npm run build-watch\" \"sleep 5 && web-dev-server --config demo/web-dev-server.config.mjs\"",
     "build-watch": "rollup -c rollup.config.js -w",
@@ -49,8 +46,8 @@
     "@material/mwc-textfield": "^0.20.0",
     "@material/mwc-top-app-bar": "^0.20.0",
     "@material/mwc-top-app-bar-fixed": "^0.20.0",
-    "lit-element": "^2.4.0",
-    "scoped-elements": "git+https://github.com/guillemcordoba/scoped-elements.git"
+    "@open-wc/scoped-elements": "^1.3.2",
+    "lit-element": "^2.4.0"
   },
   "devDependencies": {
     "@open-wc/eslint-config": "^4.0.0",

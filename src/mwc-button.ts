@@ -1,11 +1,14 @@
 import { ButtonBase } from '@material/mwc-button/mwc-button-base';
 import { style } from '@material/mwc-button/styles-css';
-import { queryAsync } from 'lit-element';
-import { Scoped } from 'scoped-elements';
+import { Constructor, queryAsync } from 'lit-element';
+import { ScopedElementsMixin as Scoped } from '@open-wc/scoped-elements';
 import { Icon } from './mwc-icon';
 import { Ripple } from './mwc-ripple';
+import { ScopedElementsHost } from '@open-wc/scoped-elements/types/src/types';
 
-export class Button extends Scoped(ButtonBase) {
+export class Button extends (Scoped(ButtonBase) as Constructor<
+  ButtonBase & ScopedElementsHost
+>) {
   static get scopedElements() {
     return {
       'mwc-icon': Icon,
@@ -18,5 +21,3 @@ export class Button extends Scoped(ButtonBase) {
 
   static styles = style;
 }
-
-
