@@ -10,10 +10,17 @@ export default {
   output: [{ dir: 'dist', format: 'es', sourcemap: true }],
   // Indicate here external modules you don't wanna include in your bundle (i.e.: 'lodash-es')
   external: [
+    'ts-lib.es6',
     'lit-html',
     'lit-element',
     'lit-html/directives/class-map',
     'lit-html/directives/style-map',
+    'lit-html/directives/if-defined',
+    'lit-html/directives/live',
+    '@material/mwc-ripple/ripple-handlers',
+    '@material/mwc-base/base-element',
+    '@material/mwc-base/form-element',
+    '@material/base/foundation',
     ...Object.keys(pkg.dependencies).filter(key => !key.startsWith('mwc')),
   ],
   watch: {
@@ -27,7 +34,6 @@ export default {
       "import '@material/mwc-icon/mwc-icon'": '',
       "import '@material/mwc-ripple/mwc-ripple'": '',
       "import { Ripple } from '@material/mwc-ripple/mwc-ripple'": '',
-
       delimiters: ['', ''],
     }),
     typescript(),
