@@ -2,7 +2,7 @@ import { _ as __decorate } from './tslib.es6-2abbead4.js';
 import '@material/mwc-ripple/ripple-handlers';
 import { query, property, html } from 'lit-element';
 import { classMap } from 'lit-html/directives/class-map';
-import { Scoped } from 'scoped-elements';
+import { ScopedElementsMixin } from '@open-wc/scoped-elements';
 import '@material/base/foundation';
 import './observer-c2e992b9.js';
 import { L as ListItemBase, s as style } from './mwc-list-item-css-b4af150d.js';
@@ -94,7 +94,7 @@ __decorate([
     property({ type: String, reflect: true })
 ], RadioListItemBase.prototype, "graphic", void 0);
 
-class RadioListItem extends Scoped(RadioListItemBase) {
+class RadioListItem extends ScopedElementsMixin(RadioListItemBase) {
     static get scopedElements() {
         return {
             'mwc-radio': Radio,

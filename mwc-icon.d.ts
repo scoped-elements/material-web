@@ -1,10 +1,6 @@
-import { LitElement, TemplateResult } from 'lit-element';
-declare const Icon_base: typeof LitElement & import("lit-element").Constructor<HTMLElement> & {
-    readonly scopedElements: import("scoped-elements").Dictionary<{
-        new (): HTMLElement;
-        prototype: HTMLElement;
-    }>;
-};
+import { LitElement, TemplateResult, Constructor } from 'lit-element';
+import { ScopedElementsHost } from '@open-wc/scoped-elements/types/src/types';
+declare const Icon_base: Constructor<LitElement & ScopedElementsHost>;
 export declare class Icon extends Icon_base {
     static styles: import("lit-element").CSSResult;
     /** @soyTemplate */

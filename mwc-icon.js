@@ -1,5 +1,5 @@
 import { css, LitElement, html } from 'lit-element';
-import { Scoped } from 'scoped-elements';
+import { ScopedElementsMixin } from '@open-wc/scoped-elements';
 
 /**
 @license
@@ -19,7 +19,7 @@ limitations under the License.
 */
 const style = css `:host{font-family:var(--mdc-icon-font, "Material Icons");font-weight:normal;font-style:normal;font-size:var(--mdc-icon-size, 24px);line-height:1;letter-spacing:normal;text-transform:none;display:inline-block;white-space:nowrap;word-wrap:normal;direction:ltr;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;-moz-osx-font-smoothing:grayscale;font-feature-settings:"liga"}`;
 
-class Icon extends Scoped(LitElement) {
+class Icon extends ScopedElementsMixin(LitElement) {
     /** @soyTemplate */
     render() {
         return html `<slot></slot>`;

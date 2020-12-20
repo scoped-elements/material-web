@@ -2,7 +2,7 @@ import { _ as __decorate } from './tslib.es6-2abbead4.js';
 import { RippleHandlers } from '@material/mwc-ripple/ripple-handlers';
 import { property, query, queryAsync, internalProperty, eventOptions, LitElement, html } from 'lit-element';
 import 'lit-html/directives/class-map';
-import { Scoped } from 'scoped-elements';
+import { ScopedElementsMixin } from '@open-wc/scoped-elements';
 import '@material/mwc-base/base-element';
 import '@material/base/foundation';
 import { Ripple } from './mwc-ripple.js';
@@ -118,7 +118,7 @@ __decorate([
     eventOptions({ passive: true })
 ], IconButtonBase.prototype, "handleRippleTouchStart", null);
 
-class IconButton extends Scoped(IconButtonBase) {
+class IconButton extends ScopedElementsMixin(IconButtonBase) {
     static get scopedElements() {
         return {
             'mwc-ripple': Ripple,

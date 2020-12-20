@@ -2,7 +2,7 @@ import { _ as __decorate } from './tslib.es6-2abbead4.js';
 import '@material/mwc-ripple/ripple-handlers';
 import { query, property, html } from 'lit-element';
 import { classMap } from 'lit-html/directives/class-map';
-import { Scoped } from 'scoped-elements';
+import { ScopedElementsMixin } from '@open-wc/scoped-elements';
 import '@material/mwc-base/base-element';
 import '@material/base/foundation';
 import './mwc-ripple.js';
@@ -88,7 +88,7 @@ __decorate([
     property({ type: String, reflect: true })
 ], CheckListItemBase.prototype, "graphic", void 0);
 
-class CheckListItem extends Scoped(CheckListItemBase) {
+class CheckListItem extends ScopedElementsMixin(CheckListItemBase) {
     static get scopedElements() {
         return {
             'mwc-checkbox': Checkbox,

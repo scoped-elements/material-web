@@ -1,11 +1,8 @@
 import { CheckListItemBase } from '@material/mwc-list/mwc-check-list-item-base';
 import { Checkbox } from './mwc-checkbox';
-declare const CheckListItem_base: typeof CheckListItemBase & import("lit-element").Constructor<HTMLElement> & {
-    readonly scopedElements: import("scoped-elements").Dictionary<{
-        new (): HTMLElement;
-        prototype: HTMLElement;
-    }>;
-};
+import { Constructor } from 'lit-element';
+import { ScopedElementsHost } from '@open-wc/scoped-elements/types/src/types';
+declare const CheckListItem_base: Constructor<CheckListItemBase & ScopedElementsHost>;
 export declare class CheckListItem extends CheckListItem_base {
     static get scopedElements(): {
         'mwc-checkbox': typeof Checkbox;

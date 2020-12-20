@@ -1,12 +1,9 @@
 import { ButtonBase } from '@material/mwc-button/mwc-button-base';
+import { Constructor } from 'lit-element';
 import { Icon } from './mwc-icon';
 import { Ripple } from './mwc-ripple';
-declare const Button_base: typeof ButtonBase & import("lit-element").Constructor<HTMLElement> & {
-    readonly scopedElements: import("scoped-elements").Dictionary<{
-        new (): HTMLElement;
-        prototype: HTMLElement;
-    }>;
-};
+import { ScopedElementsHost } from '@open-wc/scoped-elements/types/src/types';
+declare const Button_base: Constructor<ButtonBase & ScopedElementsHost>;
 export declare class Button extends Button_base {
     static get scopedElements(): {
         'mwc-icon': typeof Icon;

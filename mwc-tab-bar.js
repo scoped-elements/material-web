@@ -2,7 +2,7 @@ import { a as __extends, b as __assign, _ as __decorate } from './tslib.es6-2abb
 import '@material/mwc-ripple/ripple-handlers';
 import { query, property, html, css } from 'lit-element';
 import 'lit-html/directives/class-map';
-import { Scoped } from 'scoped-elements';
+import { ScopedElementsMixin } from '@open-wc/scoped-elements';
 import { BaseElement } from '@material/mwc-base/base-element';
 import { MDCFoundation } from '@material/base/foundation';
 import './mwc-ripple.js';
@@ -585,7 +585,7 @@ limitations under the License.
 */
 const style = css `.mdc-tab-bar{width:100%}.mdc-tab{height:48px}.mdc-tab--stacked{height:72px}:host{display:block}.mdc-tab-bar{flex:1}mwc-tab{--mdc-tab-height: 48px;--mdc-tab-stacked-height: 72px}`;
 
-class TabBar extends Scoped(TabBarBase) {
+class TabBar extends ScopedElementsMixin(TabBarBase) {
     static get scopedElements() {
         return {
             'mwc-tab': Tab$1,

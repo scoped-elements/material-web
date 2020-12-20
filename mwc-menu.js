@@ -2,7 +2,7 @@ import { _ as __decorate, a as __extends, b as __assign } from './tslib.es6-2abb
 import '@material/mwc-ripple/ripple-handlers';
 import { customElement, query, property, html, css } from 'lit-element';
 import 'lit-html/directives/class-map';
-import { Scoped } from 'scoped-elements';
+import { ScopedElementsMixin } from '@open-wc/scoped-elements';
 import { BaseElement } from '@material/mwc-base/base-element';
 import { MDCFoundation } from '@material/base/foundation';
 import 'lit-html/directives/style-map';
@@ -11,7 +11,7 @@ import './mwc-list-item-css-b4af150d.js';
 import 'lit-html/directives/if-defined';
 import './ponyfill-f805c928.js';
 import './utils-01a0fdcf.js';
-import { c as cssClasses$1, L as List } from './mwc-list-cbdd5e78.js';
+import { c as cssClasses$1, L as List } from './mwc-list-d1a53889.js';
 import { s as style$1, M as MenuSurfaceBase, a as MDCMenuSurfaceFoundation } from './mwc-menu-surface-css-72b88591.js';
 import '@material/mwc-list';
 
@@ -621,7 +621,7 @@ limitations under the License.
 */
 const style = css `mwc-list ::slotted([mwc-list-item]:not([twoline])){height:var(--mdc-menu-item-height, 48px)}mwc-list{max-width:var(--mdc-menu-max-width, auto);min-width:var(--mdc-menu-min-width, auto)}`;
 
-class Menu extends Scoped(MenuBase) {
+class Menu extends ScopedElementsMixin(MenuBase) {
     static get scopedElements() {
         return {
             'mwc-menu-surface': MenuSurface,
