@@ -17,6 +17,7 @@
     "publish-to-branch": "npm run build && cp package.json dist && gh-pages -d dist -b build"
   },
   "dependencies": {
+    "@authentic/mwc-card": "^0.9.0",
     "@material/mwc-button": "^0.20.0",
     "@material/mwc-checkbox": "^0.20.0",
     "@material/mwc-circular-progress": "^0.20.0",
