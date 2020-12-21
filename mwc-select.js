@@ -1,4 +1,4 @@
-import { a as __extends, b as __assign, _ as __decorate } from './tslib.es6-2abbead4.js';
+import { __extends, __assign, __decorate } from 'tslib';
 import '@material/mwc-ripple/ripple-handlers';
 import { query, property, eventOptions, html, css } from 'lit-element';
 import { classMap } from 'lit-html/directives/class-map';
@@ -7,21 +7,20 @@ import { Icon } from './mwc-icon.js';
 import '@material/mwc-base/base-element';
 import { MDCFoundation } from '@material/base/foundation';
 import 'lit-html/directives/style-map';
-import { o as observer } from './observer-c2e992b9.js';
-import './mwc-list-item-css-b4af150d.js';
+import { observer } from '@material/mwc-base/observer';
+import './mwc-list-item-css-34b01679.js';
 import { FormElement, addHasRemoveClass } from '@material/mwc-base/form-element';
 import { ifDefined } from 'lit-html/directives/if-defined';
-import './ponyfill-f805c928.js';
-import { i as isNodeElement } from './utils-01a0fdcf.js';
-import { n as numbers$1, a as normalizeKey, K as KEY } from './mwc-list-d1a53889.js';
-import { C as Corner } from './mwc-menu-surface-css-72b88591.js';
+import { isNodeElement } from '@material/mwc-base/utils';
+import { n as numbers$1, a as normalizeKey, K as KEY } from './mwc-list-b991c093.js';
+import { C as Corner } from './mwc-menu-surface-css-bc2945cd.js';
 import '@material/mwc-list';
 import { Menu } from './mwc-menu.js';
 import { NotchedOutline } from './mwc-notched-outline.js';
 import '@material/mwc-notched-outline';
 import '@material/mwc-menu';
 import '@material/mwc-icon';
-import { f as floatingLabel, l as lineRipple } from './mwc-line-ripple-directive-6a79bf78.js';
+import { f as floatingLabel, l as lineRipple } from './mwc-line-ripple-directive-7eb10ace.js';
 import { nothing } from 'lit-html';
 
 /**

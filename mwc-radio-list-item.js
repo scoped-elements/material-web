@@ -1,11 +1,11 @@
-import { _ as __decorate } from './tslib.es6-2abbead4.js';
+import { __decorate } from 'tslib';
 import '@material/mwc-ripple/ripple-handlers';
 import { query, property, html } from 'lit-element';
 import { classMap } from 'lit-html/directives/class-map';
 import { ScopedElementsMixin } from '@open-wc/scoped-elements';
 import '@material/base/foundation';
-import './observer-c2e992b9.js';
-import { L as ListItemBase, s as style } from './mwc-list-item-css-b4af150d.js';
+import '@material/mwc-base/observer';
+import { L as ListItemBase, s as style } from './mwc-list-item-css-34b01679.js';
 import { s as style$1 } from './mwc-control-list-item-css-b817c11e.js';
 import '@material/mwc-base/form-element';
 import { ifDefined } from 'lit-html/directives/if-defined';

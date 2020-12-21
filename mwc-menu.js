@@ -1,4 +1,4 @@
-import { _ as __decorate, a as __extends, b as __assign } from './tslib.es6-2abbead4.js';
+import { __decorate, __extends, __assign } from 'tslib';
 import '@material/mwc-ripple/ripple-handlers';
 import { customElement, query, property, html, css } from 'lit-element';
 import 'lit-html/directives/class-map';
@@ -6,13 +6,12 @@ import { ScopedElementsMixin } from '@open-wc/scoped-elements';
 import { BaseElement } from '@material/mwc-base/base-element';
 import { MDCFoundation } from '@material/base/foundation';
 import 'lit-html/directives/style-map';
-import { o as observer } from './observer-c2e992b9.js';
-import './mwc-list-item-css-b4af150d.js';
+import { observer } from '@material/mwc-base/observer';
+import './mwc-list-item-css-34b01679.js';
 import 'lit-html/directives/if-defined';
-import './ponyfill-f805c928.js';
-import './utils-01a0fdcf.js';
-import { c as cssClasses$1, L as List } from './mwc-list-d1a53889.js';
-import { s as style$1, M as MenuSurfaceBase, a as MDCMenuSurfaceFoundation } from './mwc-menu-surface-css-72b88591.js';
+import '@material/mwc-base/utils';
+import { c as cssClasses$1, L as List } from './mwc-list-b991c093.js';
+import { s as style$1, M as MenuSurfaceBase, a as MDCMenuSurfaceFoundation } from './mwc-menu-surface-css-bc2945cd.js';
 import '@material/mwc-list';
 
 /**

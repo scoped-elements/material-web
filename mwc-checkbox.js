@@ -1,4 +1,4 @@
-import { _ as __decorate } from './tslib.es6-2abbead4.js';
+import { __decorate } from 'tslib';
 import { RippleHandlers } from '@material/mwc-ripple/ripple-handlers';
 import { query, property, internalProperty, queryAsync, eventOptions, html, css } from 'lit-element';
 import { classMap } from 'lit-html/directives/class-map';

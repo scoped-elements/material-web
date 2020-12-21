@@ -2,6 +2,7 @@ import { css } from 'lit-element';
 import 'lit-html/directives/class-map';
 import { ScopedElementsMixin } from '@open-wc/scoped-elements';
 import { Card as Card$1 } from '@authentic/mwc-card';
+import '@material/dom/ponyfill';
 
 /**
 @license

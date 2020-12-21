@@ -1,4 +1,4 @@
-import { a as __extends, b as __assign, _ as __decorate } from './tslib.es6-2abbead4.js';
+import { __extends, __assign, __decorate } from 'tslib';
 import { query, property, internalProperty, html, css } from 'lit-element';
 import { classMap } from 'lit-html/directives/class-map';
 import { ScopedElementsMixin } from '@open-wc/scoped-elements';

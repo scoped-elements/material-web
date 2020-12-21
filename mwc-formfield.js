@@ -1,12 +1,11 @@
-import { a as __extends, b as __assign, _ as __decorate } from './tslib.es6-2abbead4.js';
+import { __extends, __assign, __decorate } from 'tslib';
 import { property, query, html, css } from 'lit-element';
 import { classMap } from 'lit-html/directives/class-map';
 import { BaseElement } from '@material/mwc-base/base-element';
 import { MDCFoundation } from '@material/base/foundation';
-import { o as observer } from './observer-c2e992b9.js';
+import { observer } from '@material/mwc-base/observer';
 import { FormElement } from '@material/mwc-base/form-element';
-import './ponyfill-f805c928.js';
-import { f as findAssignedElement } from './utils-01a0fdcf.js';
+import { findAssignedElement } from '@material/mwc-base/utils';
 
 /**
  * @license

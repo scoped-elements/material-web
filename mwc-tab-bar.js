@@ -1,4 +1,4 @@
-import { a as __extends, b as __assign, _ as __decorate } from './tslib.es6-2abbead4.js';
+import { __extends, __assign, __decorate } from 'tslib';
 import '@material/mwc-ripple/ripple-handlers';
 import { query, property, html, css } from 'lit-element';
 import 'lit-html/directives/class-map';
@@ -7,8 +7,8 @@ import { BaseElement } from '@material/mwc-base/base-element';
 import { MDCFoundation } from '@material/base/foundation';
 import './mwc-ripple.js';
 import 'lit-html/directives/style-map';
-import { o as observer } from './observer-c2e992b9.js';
-import './ponyfill-f805c928.js';
+import '@material/dom/ponyfill';
+import { observer } from '@material/mwc-base/observer';
 import { Tab } from '@material/mwc-tab';
 import '@material/mwc-tab-scroller';
 import '@material/mwc-tab-indicator';

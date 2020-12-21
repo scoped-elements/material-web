@@ -1,11 +1,11 @@
-import { a as __extends, b as __assign, c as __values, _ as __decorate } from './tslib.es6-2abbead4.js';
+import { __extends, __assign, __values, __decorate } from 'tslib';
 import { query, property, internalProperty, html, css } from 'lit-element';
 import { classMap } from 'lit-html/directives/class-map';
 import { BaseElement, addHasRemoveClass } from '@material/mwc-base/base-element';
 import { MDCFoundation } from '@material/base/foundation';
 import { styleMap } from 'lit-html/directives/style-map';
-import { o as observer } from './observer-c2e992b9.js';
-import { d as doesElementContainFocus, a as deepActiveElementPath } from './utils-01a0fdcf.js';
+import { observer } from '@material/mwc-base/observer';
+import { doesElementContainFocus, deepActiveElementPath } from '@material/mwc-base/utils';
 
 /**
  * @license
@@ -943,4 +943,4 @@ limitations under the License.
 const style = css `.mdc-menu-surface{display:none;position:absolute;box-sizing:border-box;max-width:calc(100vw - 32px);max-height:calc(100vh - 32px);margin:0;padding:0;transform:scale(1);transform-origin:top left;opacity:0;overflow:auto;will-change:transform,opacity;z-index:8;transition:opacity .03s linear,transform .12s cubic-bezier(0, 0, 0.2, 1),height 250ms cubic-bezier(0, 0, 0.2, 1);box-shadow:0px 5px 5px -3px rgba(0, 0, 0, 0.2),0px 8px 10px 1px rgba(0, 0, 0, 0.14),0px 3px 14px 2px rgba(0,0,0,.12);background-color:#fff;background-color:var(--mdc-theme-surface, #fff);color:#000;color:var(--mdc-theme-on-surface, #000);border-radius:4px;border-radius:var(--mdc-shape-medium, 4px);transform-origin-left:top left;transform-origin-right:top right}.mdc-menu-surface:focus{outline:none}.mdc-menu-surface--open{display:inline-block;transform:scale(1);opacity:1}.mdc-menu-surface--animating-open{display:inline-block;transform:scale(0.8);opacity:0}.mdc-menu-surface--animating-closed{display:inline-block;opacity:0;transition:opacity .075s linear}[dir=rtl] .mdc-menu-surface,.mdc-menu-surface[dir=rtl]{transform-origin-left:top right;transform-origin-right:top left}.mdc-menu-surface--anchor{position:relative;overflow:visible}.mdc-menu-surface--fixed{position:fixed}.mdc-menu-surface--fullwidth{width:100%}:host(:not([open])){display:none}.mdc-menu-surface{z-index:8;z-index:var(--mdc-menu-z-index, 8);max-height:calc(100vh - 32px);max-height:var(--mdc-menu-max-height, calc(100vh - 32px))}`;
 
 export { Corner as C, MenuSurfaceBase as M, MDCMenuSurfaceFoundation as a, style as s };
-//# sourceMappingURL=mwc-menu-surface-css-72b88591.js.map
+//# sourceMappingURL=mwc-menu-surface-css-bc2945cd.js.map

@@ -1,9 +1,9 @@
-import { a as __extends, b as __assign, _ as __decorate } from './tslib.es6-2abbead4.js';
+import { __extends, __assign, __decorate } from 'tslib';
 import { query, property, html, css } from 'lit-element';
 import { classMap } from 'lit-html/directives/class-map';
 import { BaseElement, addHasRemoveClass } from '@material/mwc-base/base-element';
 import { MDCFoundation } from '@material/base/foundation';
-import { o as observer } from './observer-c2e992b9.js';
+import { observer } from '@material/mwc-base/observer';
 import { directive } from 'lit-html';
 
 /**

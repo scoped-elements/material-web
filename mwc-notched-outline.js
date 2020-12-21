@@ -1,4 +1,4 @@
-import { a as __extends, b as __assign, _ as __decorate } from './tslib.es6-2abbead4.js';
+import { __extends, __assign, __decorate } from 'tslib';
 import { query, property, html, css } from 'lit-element';
 import { classMap } from 'lit-html/directives/class-map';
 import { BaseElement } from '@material/mwc-base/base-element';

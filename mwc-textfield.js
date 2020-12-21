@@ -1,17 +1,17 @@
-import './tslib.es6-2abbead4.js';
+import 'tslib';
 import { css } from 'lit-element';
 import 'lit-html/directives/class-map';
 import { ScopedElementsMixin } from '@open-wc/scoped-elements';
 import '@material/mwc-base/base-element';
 import '@material/base/foundation';
-import './observer-c2e992b9.js';
+import '@material/mwc-base/observer';
 import '@material/mwc-base/form-element';
 import 'lit-html/directives/if-defined';
 import { NotchedOutline } from './mwc-notched-outline.js';
 import '@material/mwc-notched-outline';
-import './mwc-line-ripple-directive-6a79bf78.js';
+import './mwc-line-ripple-directive-7eb10ace.js';
 import 'lit-html';
-import { T as TextFieldBase } from './mwc-textfield-base-e54d2f9c.js';
+import { T as TextFieldBase } from './mwc-textfield-base-47f034f9.js';
 import 'lit-html/directives/live';
 
 /**

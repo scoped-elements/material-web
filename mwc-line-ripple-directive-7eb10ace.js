@@ -1,4 +1,4 @@
-import { a as __extends, b as __assign } from './tslib.es6-2abbead4.js';
+import { __extends, __assign } from 'tslib';
 import { MDCFoundation } from '@material/base/foundation';
 import { directive } from 'lit-html';
 
@@ -312,4 +312,4 @@ const lineRipple = directive(() => (part) => {
 });
 
 export { floatingLabel as f, lineRipple as l };
-//# sourceMappingURL=mwc-line-ripple-directive-6a79bf78.js.map
+//# sourceMappingURL=mwc-line-ripple-directive-7eb10ace.js.map

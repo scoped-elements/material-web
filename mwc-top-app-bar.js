@@ -1,11 +1,10 @@
-import './tslib.es6-2abbead4.js';
+import 'tslib';
 import 'lit-element';
 import 'lit-html/directives/class-map';
 import '@material/mwc-base/base-element';
 import '@material/base/foundation';
-import './ponyfill-f805c928.js';
-import './utils-01a0fdcf.js';
-import { T as TopAppBarBase, s as style } from './mwc-top-app-bar-css-46d6a486.js';
+import '@material/mwc-base/utils';
+import { T as TopAppBarBase, s as style } from './mwc-top-app-bar-css-8b62fa69.js';
 
 class TopAppBar extends TopAppBarBase {
 }
