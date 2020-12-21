@@ -1,7 +1,14 @@
+import 'tslib';
+import './ripple-handlers-a617bd83.js';
+import 'lit-element';
+import 'lit-html/directives/class-map';
 import { ScopedElementsMixin } from '@open-wc/scoped-elements';
-import { Ripple } from './mwc-ripple';
-import { style } from '@material/mwc-list/mwc-list-item-css';
-import { ListItemBase } from '@material/mwc-list/mwc-list-item-base';
+import '@material/mwc-base/base-element';
+import '@material/ripple/foundation';
+import 'lit-html/directives/style-map';
+import { R as Ripple } from './mwc-ripple-7ae37c3f.js';
+import '@material/mwc-base/observer';
+import { L as ListItemBase, s as style } from './mwc-list-item-css-626f0dc6.js';
 
 class ListItem extends ScopedElementsMixin(ListItemBase) {
     static get scopedElements() {

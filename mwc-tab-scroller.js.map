@@ -1,1 +1,1 @@
-{"version":3,"file":"mwc-tab-scroller.js","sources":["../src/mwc-tab-scroller.ts"],"sourcesContent":["import { TabScrollerBase } from '@material/mwc-tab-scroller/mwc-tab-scroller-base';\nimport { style } from '@material/mwc-tab-scroller/mwc-tab-scroller-css';\nexport class TabScroller extends TabScrollerBase {\n}\nTabScroller.styles = style;\n"],"names":[],"mappings":";;;AAEO,MAAM,WAAW,SAAS,eAAe,CAAC;AACjD,CAAC;AACD,WAAW,CAAC,MAAM,GAAG,KAAK;;;;"}
+{"version":3,"file":"mwc-tab-scroller.js","sources":[],"sourcesContent":[],"names":[],"mappings":";;;;;"}

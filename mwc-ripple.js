@@ -1,10 +1,9 @@
-import { ScopedElementsMixin } from '@open-wc/scoped-elements';
-import { RippleBase } from '@material/mwc-ripple/mwc-ripple-base';
-import { style } from '@material/mwc-ripple/mwc-ripple-css';
-
-class Ripple extends ScopedElementsMixin(RippleBase) {
-}
-Ripple.styles = style;
-
-export { Ripple };
+import 'tslib';
+import 'lit-element';
+import 'lit-html/directives/class-map';
+import '@open-wc/scoped-elements';
+import '@material/mwc-base/base-element';
+import '@material/ripple/foundation';
+import 'lit-html/directives/style-map';
+export { R as Ripple } from './mwc-ripple-7ae37c3f.js';
 //# sourceMappingURL=mwc-ripple.js.map

@@ -1,9 +1,8 @@
-import { TabIndicatorBase } from '@material/mwc-tab-indicator/mwc-tab-indicator-base';
-import { style } from '@material/mwc-tab-indicator/mwc-tab-indicator-css';
-
-class TabIndicator extends TabIndicatorBase {
-}
-TabIndicator.styles = style;
-
-export { TabIndicator };
+import 'tslib';
+import 'lit-element';
+import 'lit-html/directives/class-map';
+import '@material/mwc-base/base-element';
+import '@material/tab-indicator/fading-foundation';
+import '@material/tab-indicator/sliding-foundation';
+export { a as TabIndicator } from './mwc-tab-indicator-9aa28366.js';
 //# sourceMappingURL=mwc-tab-indicator.js.map

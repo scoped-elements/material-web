@@ -1,1 +1,1 @@
-{"version":3,"file":"mwc-radio.js","sources":["../src/mwc-radio.ts"],"sourcesContent":["import { RadioBase } from '@material/mwc-radio/mwc-radio-base';\nimport { style } from '@material/mwc-radio/mwc-radio-css';\nexport class Radio extends RadioBase {\n}\nRadio.styles = style;\n"],"names":[],"mappings":";;;AAEO,MAAM,KAAK,SAAS,SAAS,CAAC;AACrC,CAAC;AACD,KAAK,CAAC,MAAM,GAAG,KAAK;;;;"}
+{"version":3,"file":"mwc-radio.js","sources":[],"sourcesContent":[],"names":[],"mappings":";;;;;;;"}

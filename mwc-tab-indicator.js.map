@@ -1,1 +1,1 @@
-{"version":3,"file":"mwc-tab-indicator.js","sources":["../src/mwc-tab-indicator.ts"],"sourcesContent":["import { TabIndicatorBase } from '@material/mwc-tab-indicator/mwc-tab-indicator-base';\nimport { style } from '@material/mwc-tab-indicator/mwc-tab-indicator-css';\nexport class TabIndicator extends TabIndicatorBase {\n}\nTabIndicator.styles = style;\n"],"names":[],"mappings":";;;AAEO,MAAM,YAAY,SAAS,gBAAgB,CAAC;AACnD,CAAC;AACD,YAAY,CAAC,MAAM,GAAG,KAAK;;;;"}
+{"version":3,"file":"mwc-tab-indicator.js","sources":[],"sourcesContent":[],"names":[],"mappings":";;;;;;"}

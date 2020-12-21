@@ -1,18 +1,22 @@
-import { ScopedElementsMixin } from '@open-wc/scoped-elements';
-import { MenuBase } from '@material/mwc-menu/mwc-menu-base';
-import { style } from '@material/mwc-menu/mwc-menu-css';
-import { MenuSurface } from '@material/mwc-menu/mwc-menu-surface';
-import { List } from './mwc-list';
-
-class Menu extends ScopedElementsMixin(MenuBase) {
-    static get scopedElements() {
-        return {
-            'mwc-menu-surface': MenuSurface,
-            'mwc-list': List,
-        };
-    }
-}
-Menu.styles = style;
-
-export { Menu };
+import 'tslib';
+import './ripple-handlers-a617bd83.js';
+import 'lit-element';
+import 'lit-html/directives/class-map';
+import '@open-wc/scoped-elements';
+import '@material/mwc-base/base-element';
+import 'lit-html/directives/style-map';
+import 'lit-html/directives/if-defined';
+import '@material/mwc-base/observer';
+import './mwc-list-item-css-626f0dc6.js';
+import './mwc-list-642a4b4b.js';
+import '@material/mwc-base/utils';
+import '@material/base/foundation';
+import '@material/dom/keyboard';
+import '@material/list/constants';
+import '@material/menu-surface/constants';
+import '@material/menu-surface/foundation';
+import './mwc-menu-surface-css-66530c6a.js';
+export { a as Menu } from './mwc-menu-7bc91ce8.js';
+import '@material/menu/constants';
+import '@material/menu/foundation';
 //# sourceMappingURL=mwc-menu.js.map
