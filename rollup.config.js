@@ -10,7 +10,7 @@ export default {
   output: [{ dir: 'dist', format: 'es', sourcemap: true }],
   // Indicate here external modules you don't wanna include in your bundle (i.e.: 'lodash-es')
   external(id) {
-    return !id.startsWith('@material/mwc-');
+    return !id.includes('mwc-card');
   },
   watch: {
     include: 'src/**',
