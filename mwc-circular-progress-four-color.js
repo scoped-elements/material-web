@@ -1,5 +1,5 @@
-import { CircularProgressFourColorBase } from '../node_modules/@material/mwc-circular-progress-four-color/mwc-circular-progress-four-color-base.js';
-import { style } from '../node_modules/@material/mwc-circular-progress-four-color/mwc-circular-progress-four-color-css.js';
+import { CircularProgressFourColorBase } from '@material/mwc-circular-progress-four-color/mwc-circular-progress-four-color-base';
+import { style } from '@material/mwc-circular-progress-four-color/mwc-circular-progress-four-color-css';
 
 class CircularProgressFourColor extends CircularProgressFourColorBase {
 }

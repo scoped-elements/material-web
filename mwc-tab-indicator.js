@@ -1,5 +1,5 @@
-import { TabIndicatorBase } from '../node_modules/@material/mwc-tab-indicator/mwc-tab-indicator-base.js';
-import { style } from '../node_modules/@material/mwc-tab-indicator/mwc-tab-indicator-css.js';
+import { TabIndicatorBase } from '@material/mwc-tab-indicator/mwc-tab-indicator-base';
+import { style } from '@material/mwc-tab-indicator/mwc-tab-indicator-css';
 
 class TabIndicator extends TabIndicatorBase {
 }

@@ -1,7 +1,7 @@
 import { ScopedElementsMixin } from '@open-wc/scoped-elements';
 import { Ripple } from './mwc-ripple';
-import { style } from '../node_modules/@material/mwc-list/mwc-list-item-css.js';
-import { ListItemBase } from '../node_modules/@material/mwc-list/mwc-list-item-base.js';
+import { style } from '@material/mwc-list/mwc-list-item-css';
+import { ListItemBase } from '@material/mwc-list/mwc-list-item-base';
 
 class ListItem extends ScopedElementsMixin(ListItemBase) {
     static get scopedElements() {

@@ -1,6 +1,6 @@
 import { ScopedElementsMixin } from '@open-wc/scoped-elements';
-import { TabBarBase } from '../node_modules/@material/mwc-tab-bar/mwc-tab-bar-base.js';
-import { style } from '../node_modules/@material/mwc-tab-bar/mwc-tab-bar-css.js';
+import { TabBarBase } from '@material/mwc-tab-bar/mwc-tab-bar-base';
+import { style } from '@material/mwc-tab-bar/mwc-tab-bar-css';
 import { Tab } from './mwc-tab';
 import { TabScroller } from './mwc-tab-scroller';
 

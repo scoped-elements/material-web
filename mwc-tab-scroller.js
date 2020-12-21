@@ -1,5 +1,5 @@
-import { TabScrollerBase } from '../node_modules/@material/mwc-tab-scroller/mwc-tab-scroller-base.js';
-import { style } from '../node_modules/@material/mwc-tab-scroller/mwc-tab-scroller-css.js';
+import { TabScrollerBase } from '@material/mwc-tab-scroller/mwc-tab-scroller-base';
+import { style } from '@material/mwc-tab-scroller/mwc-tab-scroller-css';
 
 class TabScroller extends TabScrollerBase {
 }

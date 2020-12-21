@@ -1,5 +1,5 @@
-import { LinearProgressBase } from '../node_modules/@material/mwc-linear-progress/mwc-linear-progress-base.js';
-import { style } from '../node_modules/@material/mwc-linear-progress/mwc-linear-progress-css.js';
+import { LinearProgressBase } from '@material/mwc-linear-progress/mwc-linear-progress-base';
+import { style } from '@material/mwc-linear-progress/mwc-linear-progress-css';
 
 class LinearProgress extends LinearProgressBase {
 }

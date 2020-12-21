@@ -1,7 +1,7 @@
 import { ScopedElementsMixin } from '@open-wc/scoped-elements';
 import { Ripple } from './mwc-ripple';
-import { style } from '../node_modules/@material/mwc-icon-button/mwc-icon-button-css.js';
-import { IconButtonBase } from '../node_modules/@material/mwc-icon-button/mwc-icon-button-base.js';
+import { style } from '@material/mwc-icon-button/mwc-icon-button-css';
+import { IconButtonBase } from '@material/mwc-icon-button/mwc-icon-button-base';
 
 class IconButton extends ScopedElementsMixin(IconButtonBase) {
     static get scopedElements() {

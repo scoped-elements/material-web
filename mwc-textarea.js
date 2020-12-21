@@ -1,5 +1,5 @@
-import { TextAreaBase } from '../node_modules/@material/mwc-textarea/mwc-textarea-base.js';
-import { style } from '../node_modules/@material/mwc-textarea/mwc-textarea-css.js';
+import { TextAreaBase } from '@material/mwc-textarea/mwc-textarea-base';
+import { style } from '@material/mwc-textarea/mwc-textarea-css';
 
 class TextArea extends TextAreaBase {
 }

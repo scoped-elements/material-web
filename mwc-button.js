@@ -1,6 +1,6 @@
 import { __decorate } from 'tslib';
-import { ButtonBase } from '../node_modules/@material/mwc-button/mwc-button-base.js';
-import { style } from '../node_modules/@material/mwc-button/styles-css.js';
+import { ButtonBase } from '@material/mwc-button/mwc-button-base';
+import { style } from '@material/mwc-button/styles-css';
 import { queryAsync } from 'lit-element';
 import { ScopedElementsMixin } from '@open-wc/scoped-elements';
 import { Icon } from './mwc-icon';

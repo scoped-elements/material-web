@@ -1,7 +1,7 @@
 import { ScopedElementsMixin } from '@open-wc/scoped-elements';
 import { NotchedOutline } from './mwc-notched-outline';
-import { TextFieldBase } from '../node_modules/@material/mwc-textfield/mwc-textfield-base.js';
-import { style } from '../node_modules/@material/mwc-textfield/mwc-textfield-css.js';
+import { TextFieldBase } from '@material/mwc-textfield/mwc-textfield-base';
+import { style } from '@material/mwc-textfield/mwc-textfield-css';
 
 class TextField extends ScopedElementsMixin(TextFieldBase) {
     static get scopedElements() {

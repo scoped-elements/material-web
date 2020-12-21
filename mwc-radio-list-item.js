@@ -1,7 +1,7 @@
 import { ScopedElementsMixin } from '@open-wc/scoped-elements';
-import { style as style$1 } from '../node_modules/@material/mwc-list/mwc-control-list-item-css.js';
-import { style } from '../node_modules/@material/mwc-list/mwc-list-item-css.js';
-import { RadioListItemBase } from '../node_modules/@material/mwc-list/mwc-radio-list-item-base.js';
+import { style as style$1 } from '@material/mwc-list/mwc-control-list-item-css';
+import { RadioListItemBase } from '@material/mwc-list/mwc-radio-list-item-base';
+import { style } from '@material/mwc-list//mwc-list-item-css';
 import { Radio } from './mwc-radio';
 
 class RadioListItem extends ScopedElementsMixin(RadioListItemBase) {

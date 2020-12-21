@@ -1,5 +1,5 @@
-import { SnackbarBase } from '../node_modules/@material/mwc-snackbar/mwc-snackbar-base.js';
-import { style } from '../node_modules/@material/mwc-snackbar/mwc-snackbar-css.js';
+import { SnackbarBase } from '@material/mwc-snackbar/mwc-snackbar-base';
+import { style } from '@material/mwc-snackbar/mwc-snackbar-css';
 
 class Snackbar extends SnackbarBase {
 }

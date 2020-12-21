@@ -1,5 +1,5 @@
-import { DrawerBase } from '../node_modules/@material/mwc-drawer/mwc-drawer-base.js';
-import { style } from '../node_modules/@material/mwc-drawer/mwc-drawer-css.js';
+import { DrawerBase } from '@material/mwc-drawer/mwc-drawer-base';
+import { style } from '@material/mwc-drawer/mwc-drawer-css';
 
 class Drawer extends DrawerBase {
 }

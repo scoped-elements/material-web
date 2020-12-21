@@ -1,6 +1,6 @@
 import { ScopedElementsMixin } from '@open-wc/scoped-elements';
-import { RippleBase } from '../node_modules/@material/mwc-ripple/mwc-ripple-base.js';
-import { style } from '../node_modules/@material/mwc-ripple/mwc-ripple-css.js';
+import { RippleBase } from '@material/mwc-ripple/mwc-ripple-base';
+import { style } from '@material/mwc-ripple/mwc-ripple-css';
 
 class Ripple extends ScopedElementsMixin(RippleBase) {
 }

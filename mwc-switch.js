@@ -1,7 +1,7 @@
 import { ScopedElementsMixin } from '@open-wc/scoped-elements';
 import { Ripple } from './mwc-ripple';
-import { SwitchBase } from '../node_modules/@material/mwc-switch/mwc-switch-base.js';
-import { style } from '../node_modules/@material/mwc-switch/mwc-switch-css.js';
+import { SwitchBase } from '@material/mwc-switch/mwc-switch-base';
+import { style } from '@material/mwc-switch/mwc-switch-css';
 
 class Switch extends ScopedElementsMixin(SwitchBase) {
     static get scopedElements() {

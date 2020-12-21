@@ -1,5 +1,5 @@
-import { IconButtonToggleBase } from '../node_modules/@material/mwc-icon-button-toggle/mwc-icon-button-toggle-base.js';
-import { style } from '../node_modules/@material/mwc-icon-button/mwc-icon-button-css.js';
+import { IconButtonToggleBase } from '@material/mwc-icon-button-toggle/mwc-icon-button-toggle-base';
+import { style } from '@material/mwc-icon-button/mwc-icon-button-css';
 
 class IconButtonToggle extends IconButtonToggleBase {
 }

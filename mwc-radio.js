@@ -1,5 +1,5 @@
-import { RadioBase } from '../node_modules/@material/mwc-radio/mwc-radio-base.js';
-import { style } from '../node_modules/@material/mwc-radio/mwc-radio-css.js';
+import { RadioBase } from '@material/mwc-radio/mwc-radio-base';
+import { style } from '@material/mwc-radio/mwc-radio-css';
 
 class Radio extends RadioBase {
 }

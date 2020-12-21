@@ -1,5 +1,5 @@
-import { MenuSurfaceBase } from '../node_modules/@material/mwc-menu/mwc-menu-surface-base.js';
-import { style } from '../node_modules/@material/mwc-menu/mwc-menu-surface-css.js';
+import { MenuSurfaceBase } from '@material/mwc-menu/mwc-menu-surface-base';
+import { style } from '@material/mwc-menu/mwc-menu-surface-css';
 
 class MenuSurface extends MenuSurfaceBase {
 }

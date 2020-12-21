@@ -1,7 +1,7 @@
 import { ScopedElementsMixin } from '@open-wc/scoped-elements';
 import { Ripple } from './mwc-ripple';
-import { TabBase } from '../node_modules/@material/mwc-tab/mwc-tab-base.js';
-import { style } from '../node_modules/@material/mwc-tab/mwc-tab-css.js';
+import { TabBase } from '@material/mwc-tab/mwc-tab-base';
+import { style } from '@material/mwc-tab/mwc-tab-css';
 import { TabIndicator } from './mwc-tab-indicator';
 
 class Tab extends ScopedElementsMixin(TabBase) {

@@ -1,7 +1,7 @@
 import { ScopedElementsMixin } from '@open-wc/scoped-elements';
-import { CheckListItemBase } from '../node_modules/@material/mwc-list/mwc-check-list-item-base.js';
-import { style as style$1 } from '../node_modules/@material/mwc-list/mwc-control-list-item-css.js';
-import { style } from '../node_modules/@material/mwc-list/mwc-list-item-css.js';
+import { CheckListItemBase } from '@material/mwc-list/mwc-check-list-item-base';
+import { style as style$1 } from '@material/mwc-list/mwc-control-list-item-css';
+import { style } from '@material/mwc-list/mwc-list-item-css';
 import { Checkbox } from './mwc-checkbox';
 
 class CheckListItem extends ScopedElementsMixin(CheckListItemBase) {

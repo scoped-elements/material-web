@@ -1,5 +1,5 @@
-import { CircularProgressBase } from '../node_modules/@material/mwc-circular-progress/mwc-circular-progress-base.js';
-import { style } from '../node_modules/@material/mwc-circular-progress/mwc-circular-progress-css.js';
+import { CircularProgressBase } from '@material/mwc-circular-progress/mwc-circular-progress-base';
+import { style } from '@material/mwc-circular-progress/mwc-circular-progress-css';
 
 class CircularProgress extends CircularProgressBase {
 }

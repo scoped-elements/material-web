@@ -1,5 +1,5 @@
-import { DialogBase } from '../node_modules/@material/mwc-dialog/mwc-dialog-base.js';
-import { style } from '../node_modules/@material/mwc-dialog/mwc-dialog-css.js';
+import { DialogBase } from '@material/mwc-dialog/mwc-dialog-base';
+import { style } from '@material/mwc-dialog/mwc-dialog-css';
 
 class Dialog extends DialogBase {
 }

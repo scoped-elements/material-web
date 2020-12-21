@@ -1,5 +1,5 @@
-import { TopAppBarFixedBase } from '../node_modules/@material/mwc-top-app-bar-fixed/mwc-top-app-bar-fixed-base.js';
-import { style } from '../node_modules/@material/mwc-top-app-bar/mwc-top-app-bar-css.js';
+import { TopAppBarFixedBase } from '@material/mwc-top-app-bar-fixed/mwc-top-app-bar-fixed-base';
+import { style } from '@material/mwc-top-app-bar/mwc-top-app-bar-css';
 
 class TopAppBarFixed extends TopAppBarFixedBase {
 }

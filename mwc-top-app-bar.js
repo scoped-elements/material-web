@@ -1,5 +1,5 @@
-import { style } from '../node_modules/@material/mwc-top-app-bar/mwc-top-app-bar-css.js';
-import { TopAppBarBase } from '../node_modules/@material/mwc-top-app-bar/mwc-top-app-bar-base.js';
+import { style } from '@material/mwc-top-app-bar/mwc-top-app-bar-css';
+import { TopAppBarBase } from '@material/mwc-top-app-bar/mwc-top-app-bar-base';
 
 class TopAppBar extends TopAppBarBase {
 }

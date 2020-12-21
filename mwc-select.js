@@ -1,7 +1,7 @@
 import { ScopedElementsMixin } from '@open-wc/scoped-elements';
 import { Icon } from './mwc-icon';
-import { SelectBase } from '../node_modules/@material/mwc-select/mwc-select-base.js';
-import { style } from '../node_modules/@material/mwc-select/mwc-select-css.js';
+import { SelectBase } from '@material/mwc-select/mwc-select-base';
+import { style } from '@material/mwc-select/mwc-select-css';
 import { Menu } from './mwc-menu';
 import { NotchedOutline } from './mwc-notched-outline';
 

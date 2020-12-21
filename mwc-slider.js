@@ -1,5 +1,5 @@
-import { SliderBase } from '../node_modules/@material/mwc-slider/mwc-slider-base.js';
-import { style } from '../node_modules/@material/mwc-slider/mwc-slider-css.js';
+import { SliderBase } from '@material/mwc-slider/mwc-slider-base';
+import { style } from '@material/mwc-slider/mwc-slider-css';
 
 class Slider extends SliderBase {
 }
