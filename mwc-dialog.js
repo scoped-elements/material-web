@@ -2,13 +2,13 @@ import { __decorate } from 'tslib';
 import { query, property, html, css } from 'lit-element';
 import { classMap } from 'lit-html/directives/class-map';
 import { BaseElement, addHasRemoveClass } from '@material/mwc-base/base-element';
+import { matches, closest } from '@material/dom/ponyfill';
 import { observer } from '@material/mwc-base/observer';
 import 'blocking-elements';
 import 'wicg-inert';
 import { cssClasses } from '@material/dialog/constants';
 import MDCDialogFoundation from '@material/dialog/foundation';
 import { applyPassive } from '@material/dom/events';
-import { matches, closest } from '@material/dom/ponyfill';
 
 const blockingElements = document.$blockingElements;
 class DialogBase extends BaseElement {
