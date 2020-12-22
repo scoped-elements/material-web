@@ -1,7 +1,7 @@
 import type { List as L } from '@material/mwc-list';
 import { ListBase } from '@material/mwc-list/mwc-list-base';
 import { style } from '@material/mwc-list/mwc-list-css';
-import { ListItem } from '@material/mwc-list/mwc-list-item';
+import { ListItem } from './mwc-list-item';
 import { Constructor } from 'lit-element';
 import { ScopedElementsMixin as Scoped } from '@open-wc/scoped-elements';
 import { ScopedElementsHost } from '@open-wc/scoped-elements/types/src/types';
