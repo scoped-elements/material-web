@@ -8,7 +8,7 @@
     "start": "concurrently --kill-others --names tsc,web-dev-server \"npm run build-watch\" \"sleep 5 && web-dev-server --config demo/web-dev-server.config.mjs\"",
     "build-watch": "rollup -c rollup.config.js -w",
     "clean": "rimraf dist",
-    "build": "npm run clean && rollup -c rollup.config.js",
+    "build": "npm run clean && rollup -c rollup.config.js && rollup -c rollup-card.config.js",
     "prepublish": "npm run build",
     "lint": "eslint --ext .ts,.html . --ignore-path .gitignore",
     "format": "eslint --ext .ts,.html . --fix --ignore-path .gitignore",
@@ -17,7 +17,6 @@
     "publish-to-branch": "npm run build && cp package.json dist && gh-pages -d dist -b build"
   },
   "dependencies": {
-    "@authentic/mwc-card": "^0.9.0",
     "@material/mwc-button": "^0.20.0",
     "@material/mwc-checkbox": "^0.20.0",
     "@material/mwc-circular-progress": "^0.20.0",
@@ -51,6 +50,7 @@
     "lit-element": "^2.4.0"
   },
   "devDependencies": {
+    "@authentic/mwc-card": "^0.9.0",
     "@open-wc/eslint-config": "^4.0.0",
     "@open-wc/testing": "^2.0.0",
     "@rollup/plugin-commonjs": "^15.1.0",

@@ -5,6 +5,7 @@ import { BaseElement } from '@material/mwc-base/base-element';
 import { ifDefined } from 'lit-html/directives/if-defined';
 import { observer } from '@material/mwc-base/observer';
 import { s as style$1, L as ListItemBase } from './mwc-list-item-css-626f0dc6.js';
+import { ListItem as ListItem$1 } from './mwc-list-item.js';
 import { findAssignedElement, isNodeElement, doesElementContainFocus, deepActiveElementPath } from '@material/mwc-base/utils';
 import { MDCFoundation } from '@material/base/foundation';
 import { normalizeKey } from '@material/dom/keyboard';
@@ -1016,11 +1017,11 @@ const style = css `@keyframes mdc-ripple-fg-radius-in{from{animation-timing-func
 class List extends ScopedElementsMixin(ListBase) {
     static get scopedElements() {
         return {
-            'mwc-list-item': ListItem,
+            'mwc-list-item': ListItem$1,
         };
     }
 }
 List.styles = style;
 
 export { ListBase as L, List as a, style as s };
-//# sourceMappingURL=mwc-list-642a4b4b.js.map
+//# sourceMappingURL=mwc-list-66fb3fb1.js.map

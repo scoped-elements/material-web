@@ -3,7 +3,7 @@ import { customElement, query, property, html, css } from 'lit-element';
 import { ScopedElementsMixin } from '@open-wc/scoped-elements';
 import { BaseElement } from '@material/mwc-base/base-element';
 import { observer } from '@material/mwc-base/observer';
-import { s as style$1, L as ListBase, a as List$1 } from './mwc-list-642a4b4b.js';
+import { s as style$1, L as ListBase, a as List$1 } from './mwc-list-66fb3fb1.js';
 import '@material/base/foundation';
 import '@material/dom/keyboard';
 import '@material/list/constants';
@@ -431,4 +431,4 @@ class Menu extends ScopedElementsMixin(MenuBase) {
 Menu.styles = style;
 
 export { MenuBase as M, Menu as a, style as s };
-//# sourceMappingURL=mwc-menu-7bc91ce8.js.map
+//# sourceMappingURL=mwc-menu-f2100009.js.map
