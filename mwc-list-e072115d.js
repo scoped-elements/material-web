@@ -1,38 +1,14 @@
 import { __decorate } from 'tslib';
-import { customElement, property, query, html, css } from 'lit-element';
+import { property, query, html, css } from 'lit-element';
 import { ScopedElementsMixin } from '@open-wc/scoped-elements';
 import { BaseElement } from '@material/mwc-base/base-element';
 import { ifDefined } from 'lit-html/directives/if-defined';
 import { observer } from '@material/mwc-base/observer';
-import { s as style$1, L as ListItemBase } from './mwc-list-item-css-626f0dc6.js';
-import { ListItem as ListItem$1 } from './mwc-list-item.js';
+import { ListItem } from './mwc-list-item.js';
 import { findAssignedElement, isNodeElement, doesElementContainFocus, deepActiveElementPath } from '@material/mwc-base/utils';
 import { MDCFoundation } from '@material/base/foundation';
 import { normalizeKey } from '@material/dom/keyboard';
 import { numbers, strings } from '@material/list/constants';
-
-/**
-@license
-Copyright 2020 Google Inc. All Rights Reserved.
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
-*/
-let ListItem = class ListItem extends ListItemBase {
-};
-ListItem.styles = style$1;
-ListItem = __decorate([
-    customElement('mwc-list-item')
-], ListItem);
 
 /**
  @license
@@ -1017,11 +993,11 @@ const style = css `@keyframes mdc-ripple-fg-radius-in{from{animation-timing-func
 class List extends ScopedElementsMixin(ListBase) {
     static get scopedElements() {
         return {
-            'mwc-list-item': ListItem$1,
+            'mwc-list-item': ListItem,
         };
     }
 }
 List.styles = style;
 
 export { ListBase as L, List as a, style as s };
-//# sourceMappingURL=mwc-list-66fb3fb1.js.map
+//# sourceMappingURL=mwc-list-e072115d.js.map

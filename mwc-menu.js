@@ -11,15 +11,15 @@ import 'lit-html/directives/if-defined';
 import '@material/mwc-base/observer';
 import './mwc-list-item-css-626f0dc6.js';
 import './mwc-list-item.js';
-import './mwc-list-66fb3fb1.js';
 import '@material/mwc-base/utils';
 import '@material/base/foundation';
 import '@material/dom/keyboard';
 import '@material/list/constants';
+import './mwc-list-e072115d.js';
 import '@material/menu-surface/constants';
 import '@material/menu-surface/foundation';
 import './mwc-menu-surface-css-66530c6a.js';
-export { a as Menu } from './mwc-menu-f2100009.js';
+export { a as Menu } from './mwc-menu-74083ff2.js';
 import '@material/menu/constants';
 import '@material/menu/foundation';
 //# sourceMappingURL=mwc-menu.js.map

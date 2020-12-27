@@ -11,9 +11,9 @@ import 'lit-html/directives/if-defined';
 import '@material/mwc-base/observer';
 import './mwc-list-item-css-626f0dc6.js';
 import './mwc-list-item.js';
-export { a as List } from './mwc-list-66fb3fb1.js';
 import '@material/mwc-base/utils';
 import '@material/base/foundation';
 import '@material/dom/keyboard';
 import '@material/list/constants';
+export { a as List } from './mwc-list-e072115d.js';
 //# sourceMappingURL=mwc-list.js.map
