@@ -24,6 +24,7 @@ export default {
       "import { Icon } '@material/mwc-icon/mwc-icon'": '',
       "import '@material/mwc-icon/mwc-icon'": '',
       "import '@material/mwc-ripple/mwc-ripple'": '',
+      "import '@material/mwc-list/mwc-list-item';": '',
       "import { Ripple } from '@material/mwc-ripple/mwc-ripple'": '',
       delimiters: ['', ''],
     }),
