@@ -124,8 +124,17 @@ class IconButton extends ScopedElementsMixin(IconButtonBase) {
             'mwc-ripple': Ripple,
         };
     }
+    renderRipple() {
+        return this.shouldRenderRipple
+            ? html ` <mwc-ripple class="ripple" .disabled="${this.disabled}" unbounded>
+        </mwc-ripple>`
+            : '';
+    }
 }
 IconButton.styles = style;
+__decorate([
+    queryAsync('.ripple')
+], IconButton.prototype, "ripple", void 0);
 
 export { IconButton };
 //# sourceMappingURL=mwc-icon-button.js.map
