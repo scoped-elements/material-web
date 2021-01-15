@@ -148,9 +148,7 @@ class TabBarBase extends BaseElement {
 __decorate([
     query('.mdc-tab-bar')
 ], TabBarBase.prototype, "mdcRoot", void 0);
-__decorate([
-    query('mwc-tab-scroller')
-], TabBarBase.prototype, "scrollerElement", void 0);
+
 __decorate([
     query('slot')
 ], TabBarBase.prototype, "tabsSlot", void 0);
