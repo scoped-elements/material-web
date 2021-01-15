@@ -1,36 +1,29 @@
 import { __decorate } from 'tslib';
 import './ripple-handlers-a617bd83.js';
-import { customElement, query, property, html, css } from 'lit-element';
+import { query, property, html, css } from 'lit-element';
 import 'lit-html/directives/class-map';
 import { ScopedElementsMixin } from '@open-wc/scoped-elements';
 import { BaseElement } from '@material/mwc-base/base-element';
 import '@material/ripple/foundation';
 import 'lit-html/directives/style-map';
-import './mwc-ripple-7ae37c3f.js';
+import './mwc-ripple.js';
 import '@material/dom/ponyfill';
 import { observer } from '@material/mwc-base/observer';
+import '@material/tab/foundation';
+import { s as style$1, T as TabBase, a as Tab$1 } from './mwc-tab-c4e333c8.js';
+import MDCTabBarFoundation from '@material/tab-bar/foundation';
 import '@material/tab-indicator/fading-foundation';
 import '@material/tab-indicator/sliding-foundation';
-import './mwc-tab-indicator-9aa28366.js';
-import { s as style$1, T as TabBase, a as Tab$1 } from './mwc-tab-ed933a13.js';
-import '@material/tab/foundation';
+import './mwc-tab-indicator.js';
 import '@material/tab-scroller/foundation';
-import { s as style$2, T as TabScrollerBase, a as TabScroller$1 } from './mwc-tab-scroller-01da5fb0.js';
-import MDCTabBarFoundation from '@material/tab-bar/foundation';
+import { TabScroller } from './mwc-tab-scroller.js';
 
 let Tab = class Tab extends TabBase {
 };
 Tab.styles = style$1;
 Tab = __decorate([
-    customElement('mwc-tab')
+    
 ], Tab);
-
-let TabScroller = class TabScroller extends TabScrollerBase {
-};
-TabScroller.styles = style$2;
-TabScroller = __decorate([
-    customElement('mwc-tab-scroller')
-], TabScroller);
 
 class TabBarBase extends BaseElement {
     constructor() {
@@ -197,9 +190,15 @@ class TabBar extends ScopedElementsMixin(TabBarBase) {
     static get scopedElements() {
         return {
             'mwc-tab': Tab$1,
-            'mwc-tab-scroller': TabScroller$1,
+            'mwc-tab-scroller': TabScroller,
         };
     }
+    //@ts-ignore
+    get scrollerElement() {
+        const tagName = this.getScopedTagName('mwc-tab-scroller');
+        return this.shadowRoot.querySelector(tagName);
+    }
+    set scrollerElement(sc) { }
 }
 TabBar.styles = style;
 

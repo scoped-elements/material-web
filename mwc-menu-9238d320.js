@@ -6,7 +6,7 @@ import { observer } from '@material/mwc-base/observer';
 import '@material/base/foundation';
 import '@material/dom/keyboard';
 import '@material/list/constants';
-import { s as style$1, L as ListBase, a as List$1 } from './mwc-list-e072115d.js';
+import { s as style$1, L as ListBase, a as List$1 } from './mwc-list-ef3f5c8d.js';
 import { s as style$2, M as MenuSurfaceBase } from './mwc-menu-surface-css-66530c6a.js';
 import { DefaultFocusState } from '@material/menu/constants';
 import MDCMenuFoundation from '@material/menu/foundation';
@@ -431,4 +431,4 @@ class Menu extends ScopedElementsMixin(MenuBase) {
 Menu.styles = style;
 
 export { MenuBase as M, Menu as a, style as s };
-//# sourceMappingURL=mwc-menu-74083ff2.js.map
+//# sourceMappingURL=mwc-menu-9238d320.js.map

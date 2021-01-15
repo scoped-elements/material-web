@@ -1000,4 +1000,4 @@ class List extends ScopedElementsMixin(ListBase) {
 List.styles = style;
 
 export { ListBase as L, List as a, style as s };
-//# sourceMappingURL=mwc-list-e072115d.js.map
+//# sourceMappingURL=mwc-list-ef3f5c8d.js.map

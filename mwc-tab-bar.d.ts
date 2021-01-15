@@ -10,5 +10,7 @@ export declare class TabBar extends TabBar_base {
         'mwc-tab': typeof Tab;
         'mwc-tab-scroller': typeof TabScroller;
     };
+    protected get scrollerElement(): TabScroller;
+    protected set scrollerElement(sc: TabScroller);
 }
 export {};

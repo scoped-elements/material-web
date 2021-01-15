@@ -1,28 +1,13 @@
 import { __decorate } from 'tslib';
 import { R as RippleHandlers } from './ripple-handlers-a617bd83.js';
-import { customElement, query, property, internalProperty, queryAsync, eventOptions, html, css } from 'lit-element';
+import { query, property, internalProperty, queryAsync, eventOptions, html, css } from 'lit-element';
 import { classMap } from 'lit-html/directives/class-map';
 import { ScopedElementsMixin } from '@open-wc/scoped-elements';
 import { BaseElement, addHasRemoveClass } from '@material/mwc-base/base-element';
-import { s as style$2, a as RippleBase, R as Ripple$1 } from './mwc-ripple-7ae37c3f.js';
+import { Ripple } from './mwc-ripple.js';
 import { observer } from '@material/mwc-base/observer';
-import { s as style$1, T as TabIndicatorBase, a as TabIndicator$1 } from './mwc-tab-indicator-9aa28366.js';
 import MDCTabFoundation from '@material/tab/foundation';
-
-let TabIndicator = class TabIndicator extends TabIndicatorBase {
-};
-TabIndicator.styles = style$1;
-TabIndicator = __decorate([
-    customElement('mwc-tab-indicator')
-], TabIndicator);
-
-/** @soyCompatible */
-let Ripple = class Ripple extends RippleBase {
-};
-Ripple.styles = style$2;
-Ripple = __decorate([
-    customElement('mwc-ripple')
-], Ripple);
+import { TabIndicator } from './mwc-tab-indicator.js';
 
 // used for generating unique id for each tab
 let tabIdCounter = 0;
@@ -294,12 +279,30 @@ const style = css `.material-icons{font-family:var(--mdc-icon-font, "Material Ic
 class Tab extends ScopedElementsMixin(TabBase) {
     static get scopedElements() {
         return {
-            'mwc-tab-indicator': TabIndicator$1,
-            'mwc-ripple': Ripple$1,
+            'mwc-tab-indicator': TabIndicator,
+            'mwc-ripple': Ripple,
         };
+    }
+    renderRipple() {
+        return this.shouldRenderRipple
+            ? html ` <mwc-ripple primary class="ripple"></mwc-ripple> `
+            : '';
+    }
+    renderIndicator() {
+        return html `<mwc-tab-indicator
+      id="indicator"
+      .icon="${this.indicatorIcon}"
+      .fade="${this.isFadingIndicator}"
+    ></mwc-tab-indicator>`;
     }
 }
 Tab.styles = style;
+__decorate([
+    queryAsync('.ripple')
+], Tab.prototype, "ripple", void 0);
+__decorate([
+    query('#indicator')
+], Tab.prototype, "tabIndicator", void 0);
 
 export { TabBase as T, Tab as a, style as s };
-//# sourceMappingURL=mwc-tab-ed933a13.js.map
+//# sourceMappingURL=mwc-tab-c4e333c8.js.map

@@ -3,7 +3,7 @@ import { R as RippleHandlers } from './ripple-handlers-a617bd83.js';
 import { query, property, internalProperty, queryAsync, eventOptions, html, css } from 'lit-element';
 import { classMap } from 'lit-html/directives/class-map';
 import { ScopedElementsMixin } from '@open-wc/scoped-elements';
-import { R as Ripple } from './mwc-ripple-7ae37c3f.js';
+import { Ripple } from './mwc-ripple.js';
 import { FormElement } from '@material/mwc-base/form-element';
 import { ifDefined } from 'lit-html/directives/if-defined';
 
@@ -244,4 +244,4 @@ class Checkbox extends ScopedElementsMixin(CheckboxBase) {
 Checkbox.styles = style;
 
 export { CheckboxBase as C, Checkbox as a, style as s };
-//# sourceMappingURL=mwc-checkbox-ee67adbc.js.map
+//# sourceMappingURL=mwc-checkbox-25caeaa0.js.map
