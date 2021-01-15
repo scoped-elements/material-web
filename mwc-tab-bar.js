@@ -59,10 +59,10 @@ class TabBarBase extends BaseElement {
     }
     createAdapter() {
         return {
-            scrollTo: (scrollX) => this.scrollerElement.scrollToPosition(scrollX),
-            incrementScroll: (scrollXIncrement) => this.scrollerElement.incrementScrollPosition(scrollXIncrement),
-            getScrollPosition: () => this.scrollerElement.getScrollPosition(),
-            getScrollContentWidth: () => this.scrollerElement.getScrollContentWidth(),
+            scrollTo: (scrollX) => this.getScrollerElement().scrollToPosition(scrollX),
+            incrementScroll: (scrollXIncrement) => this.getScrollerElement().incrementScrollPosition(scrollXIncrement),
+            getScrollPosition: () => this.getScrollerElement().getScrollPosition(),
+            getScrollContentWidth: () => this.getScrollerElement().getScrollContentWidth(),
             getOffsetWidth: () => this.mdcRoot.offsetWidth,
             isRTL: () => window.getComputedStyle(this.mdcRoot)
                 .getPropertyValue('direction') === 'rtl',
@@ -134,7 +134,7 @@ class TabBarBase extends BaseElement {
     }
     _getUpdateComplete() {
         return super._getUpdateComplete()
-            .then(() => this.scrollerElement.updateComplete)
+            .then(() => this.getScrollerElement().updateComplete)
             .then(() => {
             if (this.mdcFoundation === undefined) {
                 this.createFoundation();
@@ -148,7 +148,9 @@ class TabBarBase extends BaseElement {
 __decorate([
     query('.mdc-tab-bar')
 ], TabBarBase.prototype, "mdcRoot", void 0);
-
+__decorate([
+    query('mwc-tab-scroller')
+], TabBarBase.prototype, "scrollerElement", void 0);
 __decorate([
     query('slot')
 ], TabBarBase.prototype, "tabsSlot", void 0);
@@ -191,12 +193,10 @@ class TabBar extends ScopedElementsMixin(TabBarBase) {
             'mwc-tab-scroller': TabScroller,
         };
     }
-    //@ts-ignore
-    get scrollerElement() {
+    getScrollerElement() {
         const tagName = this.getScopedTagName('mwc-tab-scroller');
         return this.shadowRoot.querySelector(tagName);
     }
-    set scrollerElement(sc) { }
 }
 TabBar.styles = style;
 
