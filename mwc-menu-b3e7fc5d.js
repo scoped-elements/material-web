@@ -1,5 +1,5 @@
 import { __decorate } from 'tslib';
-import { customElement, query, property, html, css } from 'lit-element';
+import { query, property, html, css } from 'lit-element';
 import { ScopedElementsMixin } from '@open-wc/scoped-elements';
 import { BaseElement } from '@material/mwc-base/base-element';
 import { observer } from '@material/mwc-base/observer';
@@ -31,7 +31,7 @@ let List = class List extends ListBase {
 };
 List.styles = style$1;
 List = __decorate([
-    customElement('mwc-list')
+    
 ], List);
 
 /**
@@ -54,7 +54,7 @@ let MenuSurface = class MenuSurface extends MenuSurfaceBase {
 };
 MenuSurface.styles = style$2;
 MenuSurface = __decorate([
-    customElement('mwc-menu-surface')
+    
 ], MenuSurface);
 
 /**
@@ -431,4 +431,4 @@ class Menu extends ScopedElementsMixin(MenuBase) {
 Menu.styles = style;
 
 export { MenuBase as M, Menu as a, style as s };
-//# sourceMappingURL=mwc-menu-9238d320.js.map
+//# sourceMappingURL=mwc-menu-b3e7fc5d.js.map
