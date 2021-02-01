@@ -38,6 +38,7 @@ export default {
       'this.scrollerElement': 'this.getScrollerElement()',
       'e instanceof Tab)': 'e instanceof Tab$2)',
       'a as Tab$1': 'a as Tab$2',
+      "'mwc-tab': Tab$1": "'mwc-tab': Tab$2",
       "customElement('mwc-list')": '',
       "customElement('mwc-menu-surface')": '',
       delimiters: ['', ''],
