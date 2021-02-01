@@ -189,7 +189,7 @@ const style = css `.mdc-tab-bar{width:100%}.mdc-tab{height:48px}.mdc-tab--stacke
 class TabBar extends ScopedElementsMixin(TabBarBase) {
     static get scopedElements() {
         return {
-            'mwc-tab': Tab$1,
+            'mwc-tab': Tab$2,
             'mwc-tab-scroller': TabScroller,
         };
     }
