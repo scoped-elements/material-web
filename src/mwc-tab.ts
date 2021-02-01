@@ -18,7 +18,7 @@ export class Tab extends (Scoped(TabBase) as Constructor<
   }
 
   @queryAsync('.ripple') ripple!: Promise<Ripple | null>;
-  @query('#indicator') protected tabIndicator!: TabIndicator;
+  @query('.indicator') protected tabIndicator!: TabIndicator;
 
   protected renderRipple() {
     return this.shouldRenderRipple
@@ -28,7 +28,7 @@ export class Tab extends (Scoped(TabBase) as Constructor<
 
   protected renderIndicator() {
     return html`<mwc-tab-indicator
-      id="indicator"
+      class="indicator"
       .icon="${this.indicatorIcon}"
       .fade="${this.isFadingIndicator}"
     ></mwc-tab-indicator>`;
