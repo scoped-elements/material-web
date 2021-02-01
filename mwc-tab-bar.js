@@ -10,7 +10,7 @@ import './mwc-ripple.js';
 import '@material/dom/ponyfill';
 import { observer } from '@material/mwc-base/observer';
 import '@material/tab/foundation';
-import { s as style$1, T as TabBase, a as Tab$1 } from './mwc-tab-c4e333c8.js';
+import { s as style$1, T as TabBase, a as Tab$1 } from './mwc-tab-f4228183.js';
 import MDCTabBarFoundation from '@material/tab-bar/foundation';
 import '@material/tab-indicator/fading-foundation';
 import '@material/tab-indicator/sliding-foundation';

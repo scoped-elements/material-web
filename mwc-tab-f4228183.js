@@ -290,7 +290,7 @@ class Tab extends ScopedElementsMixin(TabBase) {
     }
     renderIndicator() {
         return html `<mwc-tab-indicator
-      id="indicator"
+      class="indicator"
       .icon="${this.indicatorIcon}"
       .fade="${this.isFadingIndicator}"
     ></mwc-tab-indicator>`;
@@ -301,8 +301,8 @@ __decorate([
     queryAsync('.ripple')
 ], Tab.prototype, "ripple", void 0);
 __decorate([
-    query('#indicator')
+    query('.indicator')
 ], Tab.prototype, "tabIndicator", void 0);
 
 export { TabBase as T, Tab as a, style as s };
-//# sourceMappingURL=mwc-tab-c4e333c8.js.map
+//# sourceMappingURL=mwc-tab-f4228183.js.map
