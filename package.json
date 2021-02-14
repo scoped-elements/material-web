@@ -1,7 +1,7 @@
 {
   "name": "scoped-material-components",
-  "version": "0.0.0",
-  "description": "Webcomponent ui-ui following open-wc recommendations",
+  "version": "0.1.0",
+  "description": "Material Web Components packaged in scoped custom elements registries using @open-wc/scoped-elements",
   "author": "guillem.cordoba@gmail.com",
   "license": "MIT",
   "scripts": {
@@ -9,12 +9,12 @@
     "build-watch": "rollup -c rollup.config.js -w",
     "clean": "rimraf dist",
     "build": "npm run clean && rollup -c rollup.config.js && rollup -c rollup-card.config.js",
-    "prepublish": "npm run build",
+    "prepublish": "npm run build && cp package.json dist",
     "lint": "eslint --ext .ts,.html . --ignore-path .gitignore",
     "format": "eslint --ext .ts,.html . --fix --ignore-path .gitignore",
     "test": "tsc && web-test-runner --coverage",
     "test:watch": "web-test-runner --watch",
-    "publish-to-branch": "npm run build && cp package.json dist && gh-pages -d dist -b build"
+    "publish-to-branch": "npm run prepublish && gh-pages -d dist -b build"
   },
   "dependencies": {
     "@material/mwc-button": "^0.20.0",
