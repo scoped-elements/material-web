@@ -1,6 +1,6 @@
 {
   "name": "scoped-material-components",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Material Web Components packaged in scoped custom elements registries using @open-wc/scoped-elements",
   "author": "guillem.cordoba@gmail.com",
   "license": "MIT",
@@ -57,8 +57,8 @@
     "@rollup/plugin-replace": "^2.3.4",
     "@rollup/plugin-typescript": "^8.1.0",
     "@types/node": "13.11.1",
-    "@typescript-eslint/eslint-plugin": "^4.15.0",
-    "@typescript-eslint/parser": "^4.15.0",
+    "@typescript-eslint/eslint-plugin": "^4.15.2",
+    "@typescript-eslint/parser": "^4.15.2",
     "@web/dev-server": "0.0.19",
     "@web/dev-server-rollup": "^0.2.12",
     "@web/test-runner": "^0.7.41",

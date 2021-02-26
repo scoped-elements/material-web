@@ -41,6 +41,7 @@ export default {
       "'mwc-tab': Tab$1": "'mwc-tab': Tab$2",
       "customElement('mwc-list')": '',
       "customElement('mwc-menu-surface')": '',
+      "customElement('mwc-notched-outline')": '',
       delimiters: ['', ''],
     }),
     typescript(),
