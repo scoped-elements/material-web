@@ -9,12 +9,13 @@
     "build-watch": "rollup -c rollup.config.js -w",
     "clean": "rimraf dist",
     "build": "npm run clean && rollup -c rollup.config.js && rollup -c rollup-card.config.js",
-    "prepublish": "npm run build && cp package.json dist",
     "lint": "eslint --ext .ts,.html . --ignore-path .gitignore",
     "format": "eslint --ext .ts,.html . --fix --ignore-path .gitignore",
     "test": "tsc && web-test-runner --coverage",
     "test:watch": "web-test-runner --watch",
-    "publish-to-branch": "npm run prepublish && gh-pages -d dist -b build"
+    "prepublish": "npm run build && cp package.json dist",
+    "publish-to-branch": "npm run prepublish && gh-pages -d dist -b build",
+    "publish-to-npm": "npm run prepublish && cd dist && npm publish"
   },
   "dependencies": {
     "@material/mwc-button": "^0.20.0",
