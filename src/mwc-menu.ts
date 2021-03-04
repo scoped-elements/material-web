@@ -10,6 +10,15 @@ import { ScopedElementsHost } from '@open-wc/scoped-elements/types/src/types';
 export class Menu extends (Scoped(
   (MenuBase as unknown) as Constructor<M>
 ) as Constructor<M & ScopedElementsHost>) {
+  protected get listElement() {
+    if (!this.listElement_) {
+      this.listElement_ = this.renderRoot.querySelector('.mdc-list');
+      return this.listElement_;
+    }
+
+    return this.listElement_;
+  }
+
   static get scopedElements() {
     return {
       'mwc-menu-surface': MenuSurface,
