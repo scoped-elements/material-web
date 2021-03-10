@@ -43,6 +43,8 @@ export default {
       "customElement('mwc-menu-surface')": '',
       "customElement('mwc-menu')": '',
       "customElement('mwc-icon')": '',
+      "customElement('mwc-checkbox')": '',
+      "customElement('mwc-radio')": '',
       "customElement('mwc-notched-outline')": '',
       delimiters: ['', ''],
     }),
