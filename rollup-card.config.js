@@ -8,7 +8,7 @@ const src = `Card = __decorate([
 ], Card);`;
 export default [
   {
-    input: ['src/mwc-card.ts'],
+    input: ['./src/mwc-card.ts'],
     output: [{ dir: 'dist', format: 'es', sourcemap: true }],
     // Indicate here external modules you don't wanna include in your bundle (i.e.: 'lodash-es')
     external(id) {
