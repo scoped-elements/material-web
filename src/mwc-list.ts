@@ -1,6 +1,6 @@
 import type { List as L } from '@material/mwc-list';
 import { ListBase } from '@material/mwc-list/mwc-list-base';
-import { style } from '@material/mwc-list/mwc-list-css';
+import { styles } from '@material/mwc-list/mwc-list.css';
 import { ListItem } from './mwc-list-item';
 import { Constructor } from 'lit-element';
 import { ScopedElementsMixin as Scoped } from '@open-wc/scoped-elements';
@@ -14,5 +14,5 @@ export class List extends (Scoped(
       'mwc-list-item': ListItem,
     };
   }
-  static styles = style;
+  static styles = styles;
 }

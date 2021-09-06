@@ -1,28 +1,18 @@
 import typescript from '@rollup/plugin-typescript';
 import resolve from '@rollup/plugin-node-resolve';
 import replace from '@rollup/plugin-replace';
-import multiInput from 'rollup-plugin-multi-input';
 
 const pkg = require('./package.json');
 
-let str = `__decorate([
-    query('mwc-tab-scroller')
-], TabBarBase.prototype, "scrollerElement", void 0);`;
-
 export default {
-  input: ['src/**/*.ts'],
+  input: ['src/index.ts'],
   output: [{ dir: 'dist', format: 'es', sourcemap: true }],
   // Indicate here external modules you don't wanna include in your bundle (i.e.: 'lodash-es')
-  external(id) {
-    if (!id.includes('mwc-') && !id.includes('./')) return true;
-    if (id.includes('mwc-form') || id.includes('mwc-base')) return false;
-    return false;
-  },
+  external: [/lit-element/, /lit-html/, '@open-wc/scoped-elements'],
   watch: {
     include: 'src/**',
   },
   plugins: [
-    multiInput(),
     replace({
       'window.customElements.define(tagName, clazz);': '',
       "import { Icon } '@material/mwc-icon/mwc-icon'": '',
@@ -39,6 +29,7 @@ export default {
       'e instanceof Tab)': 'e instanceof Tab$2)',
       'a as Tab$1': 'a as Tab$2',
       "'mwc-tab': Tab$1": "'mwc-tab': Tab$2",
+      "customElement('mwc-card')": '',
       "customElement('mwc-list')": '',
       "customElement('mwc-menu-surface')": '',
       "customElement('mwc-menu')": '',
