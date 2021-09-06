@@ -15,7 +15,7 @@ export default {
   // Indicate here external modules you don't wanna include in your bundle (i.e.: 'lodash-es')
   external(id) {
     if (!id.includes('mwc-') && !id.includes('./')) return true;
-    if (id.includes('mwc-form') || id.includes('mwc-base')) return true;
+    if (id.includes('mwc-form') || id.includes('mwc-base')) return false;
     return false;
   },
   watch: {
