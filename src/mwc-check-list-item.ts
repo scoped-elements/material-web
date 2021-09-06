@@ -1,6 +1,6 @@
 import { CheckListItemBase } from '@material/mwc-list/mwc-check-list-item-base';
-import { styles as controlStyle } from '@material/mwc-list/mwc-control-list-item.css';
-import { styles } from '@material/mwc-list/mwc-list-item.css';
+import { style as controlStyle } from '@material/mwc-list/mwc-control-list-item-css';
+import { style } from '@material/mwc-list/mwc-list-item-css';
 import { ScopedElementsMixin as Scoped } from '@open-wc/scoped-elements';
 import { Checkbox } from './mwc-checkbox';
 import { Constructor } from 'lit-element';
@@ -14,5 +14,5 @@ export class CheckListItem extends (Scoped(CheckListItemBase) as Constructor<
       'mwc-checkbox': Checkbox,
     };
   }
-  static styles = [styles, controlStyle];
+  static styles = [style, controlStyle];
 }

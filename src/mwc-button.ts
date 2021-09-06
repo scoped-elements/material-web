@@ -1,5 +1,5 @@
 import { ButtonBase } from '@material/mwc-button/mwc-button-base';
-import { styles } from '@material/mwc-button/styles.css';
+import { style } from '@material/mwc-button/styles-css';
 import { Constructor, queryAsync } from 'lit-element';
 import { ScopedElementsMixin as Scoped } from '@open-wc/scoped-elements';
 import { Icon } from './mwc-icon';
@@ -19,5 +19,5 @@ export class Button extends (Scoped(ButtonBase) as Constructor<
   @queryAsync('.ripple')
   ripple!: Promise<Ripple | null>;
 
-  static styles = styles;
+  static styles = style;
 }

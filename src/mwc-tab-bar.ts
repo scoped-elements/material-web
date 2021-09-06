@@ -1,5 +1,5 @@
 import { TabBarBase } from '@material/mwc-tab-bar/mwc-tab-bar-base';
-import { styles } from '@material/mwc-tab-bar/mwc-tab-bar.css';
+import { style } from '@material/mwc-tab-bar/mwc-tab-bar-css';
 import { ScopedElementsMixin as Scoped } from '@open-wc/scoped-elements';
 import { ScopedElementsHost } from '@open-wc/scoped-elements/types/src/types';
 import { Constructor, html, query } from 'lit-element';
@@ -9,7 +9,7 @@ import { TabScroller } from './mwc-tab-scroller';
 export class TabBar extends (Scoped(TabBarBase) as Constructor<
   TabBarBase & ScopedElementsHost
 >) {
-  static styles = styles;
+  static styles = style;
   static get scopedElements() {
     return {
       'mwc-tab': Tab,

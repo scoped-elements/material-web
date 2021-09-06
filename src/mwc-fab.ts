@@ -1,5 +1,5 @@
 import { FabBase } from '@material/mwc-fab/mwc-fab-base';
-import { styles } from '@material/mwc-fab/mwc-fab.css';
+import { style } from '@material/mwc-fab/mwc-fab-css';
 import { ScopedElementsMixin as Scoped } from '@open-wc/scoped-elements';
 import { ScopedElementsHost } from '@open-wc/scoped-elements/types/src/types';
 import { Constructor } from 'lit-element';
@@ -13,5 +13,5 @@ export class Fab extends (Scoped(FabBase) as Constructor<
       'mwc-ripple': Ripple,
     };
   }
-  static styles = styles;
+  static styles = style;
 }

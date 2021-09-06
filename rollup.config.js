@@ -31,7 +31,8 @@ export default [
         'e instanceof Tab)': 'e instanceof Tab$2)',
         'a as Tab$1': 'a as Tab$2',
         "'mwc-tab': Tab$1": "'mwc-tab': Tab$2",
-        "customElement('mwc-card')": '',
+        'customElement("mwc-card")': '',
+        'customElement("mwc-list-item")': '',
         "customElement('mwc-list')": '',
         "customElement('mwc-menu-surface')": '',
         "customElement('mwc-menu')": '',
@@ -42,7 +43,9 @@ export default [
         delimiters: ['', ''],
       }),
       typescript(),
-      resolve(),
+      resolve({
+        dedupe: ['lit-html']
+      }),
     ],
   },
   {

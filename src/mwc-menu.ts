@@ -1,6 +1,6 @@
 import { MenuBase } from '@material/mwc-menu/mwc-menu-base';
 import type { Menu as M } from '@material/mwc-menu';
-import { styles } from '@material/mwc-menu/mwc-menu.css';
+import { style } from '@material/mwc-menu/mwc-menu-css';
 import { MenuSurface } from '@material/mwc-menu/mwc-menu-surface';
 import { ScopedElementsMixin as Scoped } from '@open-wc/scoped-elements';
 import { List } from './mwc-list';
@@ -25,5 +25,5 @@ export class Menu extends (Scoped(
       'mwc-list': List,
     };
   }
-  static styles = styles;
+  static styles = style;
 }

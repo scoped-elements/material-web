@@ -1,5 +1,5 @@
 import { ListItemBase } from '@material/mwc-list/mwc-list-item-base';
-import { styles } from '@material/mwc-list/mwc-list-item.css';
+import { style } from '@material/mwc-list/mwc-list-item-css';
 import { ScopedElementsMixin as Scoped } from '@open-wc/scoped-elements';
 import { ScopedElementsHost } from '@open-wc/scoped-elements/types/src/types';
 import { Constructor } from 'lit-element';
@@ -13,5 +13,5 @@ export class ListItem extends (Scoped(ListItemBase) as Constructor<
       'mwc-ripple': Ripple,
     };
   }
-  static styles = styles;
+  static styles = style;
 }
