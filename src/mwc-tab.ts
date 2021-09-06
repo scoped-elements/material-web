@@ -1,5 +1,5 @@
 import { TabBase } from '@material/mwc-tab/mwc-tab-base';
-import { styles } from '@material/mwc-tab/mwc-tab.css';
+import { style } from '@material/mwc-tab/mwc-tab-css';
 import { ScopedElementsMixin as Scoped } from '@open-wc/scoped-elements';
 import { ScopedElementsHost } from '@open-wc/scoped-elements/types/src/types';
 import { Constructor, html, query, queryAsync } from 'lit-element';
@@ -9,7 +9,7 @@ import { TabIndicator } from './mwc-tab-indicator';
 export class Tab extends (Scoped(TabBase) as Constructor<
   TabBase & ScopedElementsHost
 >) {
-  static styles = styles;
+  static styles = style;
   static get scopedElements() {
     return {
       'mwc-tab-indicator': TabIndicator,
