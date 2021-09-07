@@ -1,14 +1,12 @@
-# scoped-material-components
+# @scoped-elements/material-web
 
-These are the [Material Web Components](https://github.com/material-components/material-web) library packaged in scoped custom elements registries using [@open-wc/scoped-elements](https://www.npmjs.com/package/@open-wc/scoped-elements).
+This is the [Material Web Components](https://github.com/material-components/material-web) library packaged using the scoped custom elements registries pattern using [@open-wc/scoped-elements](https://www.npmjs.com/package/@open-wc/scoped-elements).
 
 ## Installation
 
 ```bash
 npm i @scoped-elements/material-web
 ```
-
-> WARNING! Do not install the original @material/mwc-* packages. This package already contains all the elements from that collection, so you don't have to reinstall those packages.
 
 ## Usage
 
