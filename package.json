@@ -1,11 +1,14 @@
 {
   "name": "@scoped-elements/material-web",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Material Web Components packaged in scoped custom elements registries using @open-wc/scoped-elements",
   "author": "guillem.cordoba@gmail.com",
   "license": "MIT",
-  "module": "index.js",
-  "typings": "index.d.ts",
+  "module": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "publishConfig": {
     "access": "public"
   },
@@ -18,9 +21,7 @@
     "format": "eslint --ext .ts,.html . --fix --ignore-path .gitignore",
     "test": "tsc && web-test-runner --coverage",
     "test:watch": "web-test-runner --watch",
-    "before-publish": "npm run build && cp package.json dist && cp README.md dist",
-    "publish-to-branch": "npm run before-publish && gh-pages -d ./dist -b build",
-    "publish-to-npm": "npm run before-publish && cd dist && npm publish"
+    "publish-to-branch": "npm run before-publish && gh-pages -d ./dist -b build"
   },
   "dependencies": {
     "@material/mwc-button": "^0.25.1",
