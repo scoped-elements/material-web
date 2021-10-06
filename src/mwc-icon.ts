@@ -1,13 +1,10 @@
 import { ScopedElementsMixin as Scoped } from '@open-wc/scoped-elements';
-import { LitElement, html, TemplateResult, Constructor } from 'lit-element';
+import { LitElement, html, TemplateResult } from 'lit';
 
-import { style } from '@material/mwc-icon/mwc-icon-host-css';
-import { ScopedElementsHost } from '@open-wc/scoped-elements/types/src/types';
+import { styles } from '@material/mwc-icon/mwc-icon-host.css';
 
-export class Icon extends (Scoped(LitElement) as Constructor<
-  LitElement & ScopedElementsHost
->) {
-  static styles = style;
+export class Icon extends Scoped(LitElement) {
+  static styles = styles;
 
   /** @soyTemplate */
   protected render(): TemplateResult {
