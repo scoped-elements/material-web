@@ -1,6 +1,6 @@
 {
   "name": "@scoped-elements/material-web",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Material Web Components packaged in scoped custom elements registries using @open-wc/scoped-elements",
   "author": "guillem.cordoba@gmail.com",
   "license": "MIT",
@@ -14,9 +14,9 @@
   },
   "scripts": {
     "start": "npm run build && concurrently --kill-others --names tsc,web-dev-server \"npm run build-watch\" \"web-dev-server --config demo/web-dev-server.config.mjs\"",
+    "build": "npm run clean && rollup -c rollup.config.js && cp mwc-card.d.ts dist",
     "build-watch": "rollup -c rollup.config.js -w",
     "clean": "rimraf dist",
-    "build": "npm run clean && rollup -c rollup.config.js",
     "lint": "eslint --ext .ts,.html . --ignore-path .gitignore",
     "format": "eslint --ext .ts,.html . --fix --ignore-path .gitignore",
     "test": "tsc && web-test-runner --coverage",
