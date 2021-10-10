@@ -10,6 +10,14 @@ export class Card extends CardBase {
         :host {
           display: flex !important;
         }
+        .ui5-card-root {
+            display: flex !important;
+            
+        } 
+        .ui5-card-root > div {
+            display: flex !important;
+            flex: 1;
+        }
       `,
     ];
   }

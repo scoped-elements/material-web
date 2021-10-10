@@ -22,6 +22,8 @@ export * from './mwc-radio';
 export * from './mwc-ripple';
 export * from './mwc-select';
 export * from './mwc-slider';
+// Uncomment when slider-range is finished and usable
+//export * from './mwc-slider-range';
 export * from './mwc-snackbar';
 export * from './mwc-switch';
 export * from './mwc-tab-bar';

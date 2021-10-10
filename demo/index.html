@@ -7,7 +7,8 @@
         background: #fafafa;
         font-family: Arial, Helvetica, sans-serif;
       }
-      html, body {
+      html,
+      body {
         margin: 0;
       }
     </style>
@@ -20,16 +21,34 @@
       rel="stylesheet"
     />
   </head>
-  <body style="height: 100vh; width: 100vw; display: flex;">
-    <mwc-card style="flex: 1; padding: 16px;">
-      <div></div>
-      <mwc-button label="hello"></mwc-button>
+  <body style="height: 100vh; width: 100vw; display: flex">
+    <mwc-card style="flex: 1; padding: 16px">
+      <div
+        style="
+          flex: 1;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+        "
+      >
+        <mwc-slider
+          discrete
+          withTickMarks
+          style="width: 300px"
+          min="0"
+          max="10"
+        ></mwc-slider>
+
+        <mwc-button label="hello"></mwc-button>
+      </div>
     </mwc-card>
 
     <script type="module">
-      import { Card, Button } from '../dist';
+      import { Card, Button, Slider } from '../dist';
 
       customElements.define('mwc-button', Button);
+      customElements.define('mwc-slider', Slider);
       customElements.define('mwc-card', Card);
     </script>
   </body>
