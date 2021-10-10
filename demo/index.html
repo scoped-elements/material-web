@@ -32,11 +32,18 @@
           flex-direction: column;
         "
       >
+        <mwc-tab-bar>
+          <mwc-tab label="Tab one"></mwc-tab>
+          <mwc-tab label="Tab two"></mwc-tab>
+          <mwc-tab label="Tab three"></mwc-tab>
+        </mwc-tab-bar>
+
         <mwc-slider
           discrete
           withTickMarks
+          value="5"
           style="width: 300px"
-          min="0"
+          min="5"
           max="10"
         ></mwc-slider>
 
@@ -45,8 +52,10 @@
     </mwc-card>
 
     <script type="module">
-      import { Card, Button, Slider } from '../dist';
+      import { Card, Button, Slider, TabBar, Tab } from '../dist';
 
+      customElements.define('mwc-tab', Tab);
+      customElements.define('mwc-tab-bar', TabBar);
       customElements.define('mwc-button', Button);
       customElements.define('mwc-slider', Slider);
       customElements.define('mwc-card', Card);
