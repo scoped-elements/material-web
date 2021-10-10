@@ -12,9 +12,10 @@ export class Card extends CardBase {
         }
         .ui5-card-root {
             display: flex !important;
-            
+            flex-direction: column;
         } 
         .ui5-card-root > div {
+            flex-direction: column;
             display: flex !important;
             flex: 1;
         }
