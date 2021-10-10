@@ -18,6 +18,7 @@ export class Card extends CardBase {
             flex-direction: column;
             display: flex !important;
             flex: 1;
+            height: 100%;
         }
       `,
     ];
