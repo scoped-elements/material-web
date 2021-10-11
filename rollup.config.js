@@ -21,6 +21,7 @@ export default {
       'window.customElements.define(tag, this);': '',
       'window.customElements.define(tagName, clazz);': '',
       'customElements.define': '',
+      "import './mwc-list-item';": '',
       "import { Icon } '@material/mwc-icon/mwc-icon'": '',
       "import '@material/mwc-icon/mwc-icon'": '',
       "import '@material/mwc-ripple/mwc-ripple'": '',
