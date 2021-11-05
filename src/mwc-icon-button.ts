@@ -6,7 +6,7 @@ import { queryAsync } from 'lit/decorators.js';
 import { Ripple } from './mwc-ripple';
 
 export class IconButton extends Scoped(IconButtonBase) {
-  static styles = styles;
+  static styles = [styles];
   static get scopedElements() {
     return {
       'mwc-ripple': Ripple,

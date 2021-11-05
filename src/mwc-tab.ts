@@ -5,7 +5,7 @@ import { Ripple } from './mwc-ripple';
 import { TabIndicator } from './mwc-tab-indicator';
 
 export class Tab extends Scoped(TabBase) {
-  static styles = styles;
+  static styles = [styles];
   static get scopedElements() {
     return {
       'mwc-tab-indicator': TabIndicator,

@@ -2,5 +2,5 @@ import { CircularProgressFourColorBase } from '@material/mwc-circular-progress-f
 import { styles } from '@material/mwc-circular-progress-four-color/mwc-circular-progress-four-color.css';
 
 export class CircularProgressFourColor extends CircularProgressFourColorBase {
-  static styles = styles;
+  static styles = [styles];
 }

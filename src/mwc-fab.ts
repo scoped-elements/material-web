@@ -9,5 +9,5 @@ export class Fab extends Scoped(FabBase) {
       'mwc-ripple': Ripple,
     };
   }
-  static styles = styles;
+  static styles = [styles];
 }

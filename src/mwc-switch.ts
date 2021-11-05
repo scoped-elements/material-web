@@ -4,7 +4,7 @@ import { ScopedElementsMixin as Scoped } from '@open-wc/scoped-elements';
 import { Ripple } from './mwc-ripple';
 
 export class Switch extends Scoped(SwitchBase) {
-  static styles = styles;
+  static styles = [styles];
   static get scopedElements() {
     return {
       'mwc-ripple': Ripple,

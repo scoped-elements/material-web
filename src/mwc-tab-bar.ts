@@ -183,7 +183,7 @@ export class TabBarBase extends BaseElement {
 }
 
 export class TabBar extends Scoped(TabBarBase) {
-  static styles = styles;
+  static styles = [styles];
 
   static get scopedElements() {
     return {

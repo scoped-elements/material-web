@@ -9,5 +9,5 @@ export class ListItem extends Scoped(ListItemBase) {
       'mwc-ripple': Ripple,
     };
   }
-  static styles = styles;
+  static styles = [styles];
 }

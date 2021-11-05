@@ -6,7 +6,7 @@ import { ScopedElementsMixin as Scoped } from '@open-wc/scoped-elements';
 class T extends TextAreaBase {}
 
 export class TextArea extends Scoped(T) {
-  static styles = styles;
+  static styles = [styles];
   static get scopedElements() {
     return {
       'mwc-notched-outline': NotchedOutline,

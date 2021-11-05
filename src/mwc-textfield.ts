@@ -7,7 +7,7 @@ import { NotchedOutline } from './mwc-notched-outline';
 
 class T extends TextFieldBase {}
 export class TextField extends Scoped(T) {
-  static styles = styles;
+  static styles = [styles];
   static get scopedElements() {
     return {
       'mwc-notched-outline': NotchedOutline,

@@ -9,7 +9,7 @@ import { query } from 'lit/decorators.js';
 class S extends SelectBase {}
 
 export class Select extends Scoped(S) {
-  static styles = styles;
+  static styles = [styles];
   static get scopedElements() {
     return {
       'mwc-notched-outline': NotchedOutline,

@@ -11,5 +11,5 @@ export class List extends Scoped(L) {
       'mwc-list-item': ListItem,
     };
   }
-  static styles = styles;
+  static styles = [styles];
 }

@@ -2,5 +2,5 @@ import { NotchedOutlineBase } from '@material/mwc-notched-outline/mwc-notched-ou
 import { styles } from '@material/mwc-notched-outline/mwc-notched-outline.css';
 
 export class NotchedOutline extends NotchedOutlineBase {
-  static styles = styles;
+  static styles = [styles];
 }

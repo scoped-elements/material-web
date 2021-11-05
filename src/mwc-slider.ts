@@ -4,7 +4,7 @@ import { ScopedElementsMixin } from '@open-wc/scoped-elements';
 import { Ripple } from './mwc-ripple';
 
 export class Slider extends ScopedElementsMixin(SliderSingleBase) {
-  static styles = styles;
+  static styles = [styles];
 
   static get scopedElements() {
     return {

@@ -9,5 +9,5 @@ export class Checkbox extends Scoped(CheckboxBase) {
       'mwc-ripple': Ripple,
     };
   }
-  static styles = styles;
+  static styles = [styles];
 }

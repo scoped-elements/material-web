@@ -4,7 +4,7 @@ import { LitElement, html, TemplateResult } from 'lit';
 import { styles } from '@material/mwc-icon/mwc-icon-host.css';
 
 export class Icon extends Scoped(LitElement) {
-  static styles = styles;
+  static styles = [styles];
 
   /** @soyTemplate */
   protected render(): TemplateResult {

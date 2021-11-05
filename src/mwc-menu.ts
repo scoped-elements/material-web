@@ -13,5 +13,5 @@ export class Menu extends Scoped(M) {
       'mwc-list': List,
     };
   }
-  static styles = styles;
+  static styles = [styles];
 }
