@@ -48,17 +48,23 @@
         ></mwc-slider>
 
         <mwc-button label="hello"></mwc-button>
+        <mwc-textarea
+          outlined
+          style="width: 300px; height: 200px"
+          label="test"
+        ></mwc-textarea>
       </div>
     </mwc-card>
 
     <script type="module">
-      import { Card, Button, Slider, TabBar, Tab } from '../dist';
+      import { Card, Button, Slider, TabBar, Tab, TextArea } from '../dist';
 
       customElements.define('mwc-tab', Tab);
       customElements.define('mwc-tab-bar', TabBar);
       customElements.define('mwc-button', Button);
       customElements.define('mwc-slider', Slider);
       customElements.define('mwc-card', Card);
+      customElements.define('mwc-textarea', TextArea);
     </script>
   </body>
 </html>
