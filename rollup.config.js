@@ -2,20 +2,26 @@ import typescript from '@rollup/plugin-typescript';
 import resolve from '@rollup/plugin-node-resolve';
 import replace from '@rollup/plugin-replace';
 
-const pkg = require('./package.json');
-
 export default {
   input: ['src/index.ts'],
   output: [{ dir: 'dist', format: 'es', sourcemap: true }],
   // Indicate here external modules you don't wanna include in your bundle (i.e.: 'lodash-es')
-  external: [/lit\//, 'lit', /lit-element/, /lit-html/, '@open-wc/scoped-elements'],
+  external: [
+    /lit\//,
+    'lit',
+    /lit-element/,
+    /lit-html/,
+    '@open-wc/scoped-elements',
+  ],
   watch: {
     include: 'src/**',
   },
   plugins: [
     replace({
-      'return !!this.header.length;': 'return this.header && !!this.header.length;',
-      '"ui5-card--nocontent": !this.content.length': '"ui5-card--nocontent": !this.content || !this.content.length',
+      'return !!this.header.length;':
+        'return this.header && !!this.header.length;',
+      '"ui5-card--nocontent": !this.content.length':
+        '"ui5-card--nocontent": !this.content || !this.content.length',
       'const definedGlobally = customElements.get(tag);': 'return this;',
       'window.customElements.define': '',
       'window.customElements.define(tag, this);': '',
@@ -50,7 +56,7 @@ export default {
     typescript(),
     resolve({
       dedupe: ['lit-html'],
-      browser: true
+      browser: true,
     }),
   ],
 };

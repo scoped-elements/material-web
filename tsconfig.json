@@ -1,20 +1,31 @@
-  {
+{
   "compilerOptions": {
-    "target": "es2018",
-    "module": "esnext",
-    "moduleResolution": "node",
-    "noEmitOnError": true,
-    "lib": ["es2017", "dom"],
-    "strict": false,
-    "esModuleInterop": false,
-    "allowSyntheticDefaultImports": true,
+    "allowUnreachableCode": false,
+    "baseUrl": ".",
+    "declaration": true,
+    "outDir": "dist",
+    "declarationMap": false,
+    "downlevelIteration": true,
+    "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "importHelpers": true,
-    "outDir": "dist",
+    "module": "es2015",
+    "moduleResolution": "node",
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUnusedLocals": true,
+    "paths": {
+      "@material/web/*": ["./*"]
+    },
     "sourceMap": true,
-    "rootDir": "src",
-    "declaration": true,
-    "useDefineForClassFields": false
-  },
-  "include": ["**/*.ts"]
+    "inlineSources": true,
+    "strict": true,
+    "strictNullChecks": false,
+    "target": "es2020",
+    "types": ["lit", "jasmine"]
+  }
 }

@@ -32,6 +32,12 @@
           flex-direction: column;
         "
       >
+        <md-filled-autocomplete></md-filled-autocomplete>
+        <md-elevated-button label="hey"></md-elevated-button>
+        <md-tonal-button label="hey"></md-tonal-button>
+        <md-text-button label="hey"></md-text-button>
+        <md-outlined-button label="hey"></md-outlined-button>
+        <md-standard-icon-button icon="error"></md-standard-icon-button>
         <mwc-tab-bar>
           <mwc-tab label="Tab one"></mwc-tab>
           <mwc-tab label="Tab two"></mwc-tab>
@@ -57,14 +63,21 @@
     </mwc-card>
 
     <script type="module">
-      import { Card, Button, Slider, TabBar, Tab, TextArea } from '../dist';
+      import {
+        MdElevatedButton,
+        MdCheckbox,
+        MdTonalButton,
+        MdOutlinedButton,
+        MdStandardIconButton,
+        MdTextButton,
+      } from '../dist';
 
-      customElements.define('mwc-tab', Tab);
-      customElements.define('mwc-tab-bar', TabBar);
-      customElements.define('mwc-button', Button);
-      customElements.define('mwc-slider', Slider);
-      customElements.define('mwc-card', Card);
-      customElements.define('mwc-textarea', TextArea);
+      customElements.define('md-elevated-button', MdElevatedButton);
+      customElements.define('md-tonal-button', MdTonalButton);
+      customElements.define('md-checkbox', MdCheckbox);
+      customElements.define('md-outlined-button', MdOutlinedButton);
+      customElements.define('md-text-button', MdTextButton);
+      customElements.define('md-standard-icon-button', MdStandardIconButton);
     </script>
   </body>
 </html>
