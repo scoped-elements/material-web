@@ -4,15 +4,18 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
+import { styles as listItemStyles } from '@material/web/list/lib/listitem/list-item-styles.css.js';
 
-import {styles as listItemStyles} from '@material/web/list/lib/listitem/list-item-styles.css.js';
+import { MenuItemEl } from '@material/web/menu/lib/menuitem/menu-item.js';
+import { styles as privateProps } from '@material/web/menu/lib/menuitem/menu-item-private-styles.css.js';
+import { styles } from '@material/web/menu/lib/menuitem/menu-item-styles.css.js';
 
-import {MenuItem} from '@material/web/menu/lib/menuitem/menu-item.js';
-import {styles as privateProps} from '@material/web/menu/lib/menuitem/menu-item-private-styles.css.js';
-import {styles} from '@material/web/menu/lib/menuitem/menu-item-styles.css.js';
-
-export {ListItem} from '@material/web/list/lib/listitem/list-item.js';
-export {CloseMenuEvent, DeactivateItemsEvent, MenuItem} from '@material/web/menu/lib/shared.js';
+export { ListItem } from '@material/web/list/lib/listitem/list-item.js';
+export {
+  CloseMenuEvent,
+  DeactivateItemsEvent,
+  MenuItem,
+} from '@material/web/menu/lib/shared.js';
 
 declare global {
   interface HTMLElementTagNameMap {
@@ -35,6 +38,6 @@ declare global {
  * @final
  * @suppress {visibility}
  */
-export class MdMenuItem extends MenuItem {
+export class MdMenuItem extends MenuItemEl {
   static override styles = [privateProps, listItemStyles, styles];
 }

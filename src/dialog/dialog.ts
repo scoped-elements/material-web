@@ -5,8 +5,8 @@
  */
 import { MdElevation } from '../elevation/elevation.js';
 
-import {Dialog} from '@material/web/dialog/lib/dialog.js';
-import {styles} from '@material/web/dialog/lib/dialog-styles.css.js';
+import { Dialog } from '@material/web/dialog/lib/dialog.js';
+import { styles } from '@material/web/dialog/lib/dialog-styles.css.js';
 import { ScopedElementsMixin } from '@open-wc/scoped-elements';
 declare global {
   interface HTMLElementTagNameMap {
@@ -40,9 +40,10 @@ declare global {
  */
 export class MdDialog extends ScopedElementsMixin(Dialog) {
   static override styles = [styles];
-  
+
   static get scopedElements() {
     return {
       'md-elevation': MdElevation,
     };
+  }
 }

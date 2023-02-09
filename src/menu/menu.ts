@@ -7,12 +7,16 @@ import { MdFocusRing } from '../focus/focus-ring.js';
 import { MdList } from '../list/list.js';
 import { MdElevation } from '../elevation/elevation.js';
 
-import {Menu} from '@material/web/menu/lib/menu.js';
-import {styles} from '@material/web/menu/lib/menu-styles.css.js';
+import { Menu } from '@material/web/menu/lib/menu.js';
+import { styles } from '@material/web/menu/lib/menu-styles.css.js';
 
-export {ListItem} from '@material/web/list/lib/listitem/list-item.js';
-export {Corner, DefaultFocusState} from '@material/web/menu/lib/surfacePositionController.js';
-export {CloseMenuEvent, DeactivateItemsEvent, MenuItem} from '@material/web/menu/lib/shared.js';
+export { ListItem } from '@material/web/list/lib/listitem/list-item.js';
+export { Corner, DefaultFocusState } from '@material/web/menu/lib/menu.js';
+export {
+  CloseMenuEvent,
+  DeactivateItemsEvent,
+  MenuItem,
+} from '@material/web/menu/lib/shared.js';
 import { ScopedElementsMixin } from '@open-wc/scoped-elements';
 declare global {
   interface HTMLElementTagNameMap {
@@ -64,12 +68,12 @@ declare global {
  */
 export class MdMenu extends ScopedElementsMixin(Menu) {
   static override styles = [styles];
-  
+
   static get scopedElements() {
     return {
       'md-elevation': MdElevation,
       'md-list': MdList,
-      'md-focus-ring': MdFocusRing
+      'md-focus-ring': MdFocusRing,
     };
   }
 }

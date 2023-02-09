@@ -30,7 +30,7 @@
     "@material/mwc-snackbar": "^0.27.0",
     "@material/mwc-textarea": "^0.27.0",
     "@material/mwc-top-app-bar": "^0.27.0",
-    "@material/web": "^1.0.0-pre.1",
+    "@material/web": "^1.0.0-pre.2",
     "@open-wc/scoped-elements": "^2.0.1",
     "@ui5/webcomponents": "^1.0.0-rc.15",
     "lit": "^2.0.2"
