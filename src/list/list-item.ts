@@ -6,9 +6,9 @@
 import { MdFocusRing } from '../focus/focus-ring.js';
 import { MdRipple } from '../ripple/ripple.js';
 
-import { ListItem} from '@material/web/list/lib/listitem/list-item.js';
-//import {styles as privateProps} from '@material/web/list/lib/listitem/list-item-private-styles.css.js';
-import {styles} from '@material/web/list/lib/listitem/list-item-styles.css.js';
+import { ListItemEl } from '@material/web/list/lib/listitem/list-item.js';
+import { styles as privateProps } from '@material/web/list/lib/listitem/list-item-private-styles.css.js';
+import { styles } from '@material/web/list/lib/listitem/list-item-styles.css.js';
 import { ScopedElementsMixin } from '@open-wc/scoped-elements';
 declare global {
   interface HTMLElementTagNameMap {
@@ -37,15 +37,12 @@ declare global {
  * @final
  * @suppress {visibility}
  */
-export class MdListItem extends ScopedElementsMixin(ListItem) {
-  static override styles = [
-    //privateProps,
-    styles
-  ];
+export class MdListItem extends ScopedElementsMixin(ListItemEl) {
+  static override styles = [privateProps, styles];
   static get scopedElements() {
     return {
       'md-ripple': MdRipple,
-      'md-focus-ring': MdFocusRing
+      'md-focus-ring': MdFocusRing,
     };
   }
 }

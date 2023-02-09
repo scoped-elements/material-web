@@ -43,7 +43,11 @@
           <mwc-tab label="Tab two"></mwc-tab>
           <mwc-tab label="Tab three"></mwc-tab>
         </mwc-tab-bar>
-
+        <md-list
+          ><md-list-item headline="Asdf" supportingText="asddd"
+            >asdf</md-list-item
+          ></md-list
+        >
         <mwc-slider
           discrete
           withTickMarks
@@ -66,6 +70,8 @@
       import {
         MdElevatedButton,
         MdCheckbox,
+        MdList,
+        MdListItem,
         MdTonalButton,
         MdOutlinedButton,
         MdStandardIconButton,
@@ -74,6 +80,8 @@
 
       customElements.define('md-elevated-button', MdElevatedButton);
       customElements.define('md-tonal-button', MdTonalButton);
+      customElements.define('md-list', MdList);
+      customElements.define('md-list-item', MdListItem);
       customElements.define('md-checkbox', MdCheckbox);
       customElements.define('md-outlined-button', MdOutlinedButton);
       customElements.define('md-text-button', MdTextButton);
