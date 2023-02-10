@@ -80,3 +80,11 @@ export * from './switch/switch.js';
 
 export * from './textfield/filled-text-field.js';
 export * from './textfield/outlined-text-field.js';
+
+// TODO: change this to @material/web when they are released
+
+export * from './mwc-card.js';
+export * from './mwc-circular-progress.js';
+export * from './mwc-snackbar.js';
+export * from './mwc-top-app-bar.js';
+

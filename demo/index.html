@@ -32,7 +32,7 @@
           flex-direction: column;
         "
       >
-        <md-filled-autocomplete></md-filled-autocomplete>
+        <md-outlined-autocomplete></md-outlined-autocomplete>
         <md-elevated-button label="hey"></md-elevated-button>
         <md-tonal-button label="hey"></md-tonal-button>
         <md-text-button label="hey"></md-text-button>
@@ -73,10 +73,16 @@
         MdList,
         MdListItem,
         MdTonalButton,
+        MdOutlinedAutocomplete,
+        Card,
         MdOutlinedButton,
         MdStandardIconButton,
         MdTextButton,
       } from '../dist';
+
+      customElements.define('md-outlined-autocomplete', MdOutlinedAutocomplete);
+
+      customElements.define('mwc-card', Card);
 
       customElements.define('md-elevated-button', MdElevatedButton);
       customElements.define('md-tonal-button', MdTonalButton);

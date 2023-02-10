@@ -14,7 +14,7 @@
   },
   "scripts": {
     "start": "npm run build && concurrently --kill-others --names tsc,web-dev-server \"npm run build-watch\" \"web-dev-server --config demo/web-dev-server.config.mjs\"",
-    "build": "npm run clean && rollup -c rollup.config.js && cp md-card.d.ts dist",
+    "build": "npm run clean && rollup -c rollup.config.js && cp mwc-card.d.ts dist",
     "build-watch": "rollup -c rollup.config.js -w",
     "clean": "rimraf dist",
     "lint": "eslint --ext .ts,.html . --ignore-path .gitignore",
@@ -24,11 +24,7 @@
   },
   "dependencies": {
     "@material/mwc-circular-progress": "^0.27.0",
-    "@material/mwc-notched-outline": "^0.27.0",
-    "@material/mwc-select": "^0.27.0",
-    "@material/mwc-slider": "^0.27.0",
     "@material/mwc-snackbar": "^0.27.0",
-    "@material/mwc-textarea": "^0.27.0",
     "@material/mwc-top-app-bar": "^0.27.0",
     "@material/web": "^1.0.0-pre.2",
     "@open-wc/scoped-elements": "^2.0.1",
