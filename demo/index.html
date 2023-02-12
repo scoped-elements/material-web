@@ -22,6 +22,7 @@
     />
   </head>
   <body style="height: 100vh; width: 100vw; display: flex">
+    <div id="content"></div>
     <mwc-card style="flex: 1; padding: 16px">
       <div
         style="
@@ -48,6 +49,25 @@
             >asdf</md-list-item
           ></md-list
         >
+        <label
+          style="
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+          "
+          ><md-switch style="margin-right: 4px" selected></md-switch>asdf</label
+        >
+        <label
+          style="
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+          "
+          ><md-checkbox style="margin-right: 4px" checked></md-checkbox
+          >asdf</label
+        >
         <mwc-slider
           discrete
           withTickMarks
@@ -71,7 +91,9 @@
         MdElevatedButton,
         MdCheckbox,
         MdList,
+        MdOutlinedTextField,
         MdListItem,
+        MdSwitch,
         MdTonalButton,
         MdOutlinedAutocomplete,
         Card,
@@ -79,10 +101,22 @@
         MdStandardIconButton,
         MdTextButton,
       } from '../dist';
+      import { render, html } from 'lit';
+
+      customElements.define('md-outlined-textfield', MdOutlinedTextField);
+
+      render(
+        html`<md-outlined-textfield  label="asdf" required
+          @input=${e => console.log(e.target.value)}
+        ></md-outlined-textfieldt>`,
+        document.getElementById('content')
+      );
 
       customElements.define('md-outlined-autocomplete', MdOutlinedAutocomplete);
 
       customElements.define('mwc-card', Card);
+
+      customElements.define('md-switch', MdSwitch);
 
       customElements.define('md-elevated-button', MdElevatedButton);
       customElements.define('md-tonal-button', MdTonalButton);
