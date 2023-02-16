@@ -1,6 +1,6 @@
 {
   "name": "@scoped-elements/material-web",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Material Web Components packaged in scoped custom elements registries using @open-wc/scoped-elements",
   "author": "guillem.cordoba@gmail.com",
   "license": "MIT",

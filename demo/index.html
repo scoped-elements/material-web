@@ -85,7 +85,7 @@
         ></mwc-textarea>
       </div>
     </mwc-card>
-
+    <md-fab icon="add"></md-fab>
     <script type="module">
       import {
         MdElevatedButton,
@@ -97,6 +97,7 @@
         MdTonalButton,
         MdOutlinedAutocomplete,
         Card,
+        MdFab,
         MdOutlinedButton,
         MdStandardIconButton,
         MdTextButton,
@@ -104,6 +105,8 @@
       import { render, html } from 'lit';
 
       customElements.define('md-outlined-textfield', MdOutlinedTextField);
+
+      customElements.define('md-fab', MdFab);
 
       render(
         html`<md-outlined-textfield  label="asdf" required
