@@ -76,6 +76,8 @@ export * from './segmentedbutton/outlined-segmented-button.js';
 
 export * from './segmentedbuttonset/outlined-segmented-button-set.js';
 
+export * from './slider/slider.js';
+
 export * from './switch/switch.js';
 
 export * from './textfield/filled-text-field.js';

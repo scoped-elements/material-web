@@ -33,6 +33,7 @@
           flex-direction: column;
         "
       >
+        <label> <md-slider></md-slider>asdfdasf</label>
         <md-outlined-autocomplete></md-outlined-autocomplete>
         <md-elevated-button label="hey"></md-elevated-button>
         <md-tonal-button label="hey"></md-tonal-button>
@@ -101,12 +102,14 @@
         MdOutlinedButton,
         MdStandardIconButton,
         MdTextButton,
+        MdSlider,
       } from '../dist';
       import { render, html } from 'lit';
 
       customElements.define('md-outlined-textfield', MdOutlinedTextField);
 
       customElements.define('md-fab', MdFab);
+      customElements.define('md-slider', MdSlider);
 
       render(
         html`<md-outlined-textfield  label="asdf" required

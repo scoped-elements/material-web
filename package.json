@@ -1,6 +1,6 @@
 {
   "name": "@scoped-elements/material-web",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Material Web Components packaged in scoped custom elements registries using @open-wc/scoped-elements",
   "author": "guillem.cordoba@gmail.com",
   "license": "MIT",
@@ -26,8 +26,8 @@
     "@material/mwc-circular-progress": "^0.27.0",
     "@material/mwc-snackbar": "^0.27.0",
     "@material/mwc-top-app-bar": "^0.27.0",
-    "@material/web": "^1.0.0-pre.2",
-    "@open-wc/scoped-elements": "^2.0.1",
+    "@material/web": "^1.0.0-pre.3",
+    "@open-wc/scoped-elements": "^2.1.1",
     "@ui5/webcomponents": "^1.0.0-rc.15",
     "lit": "^2.0.2"
   },
