@@ -1,3 +1,5 @@
+import './polyfill.js';
+
 export * from './autocomplete/filled-autocomplete.js';
 export * from './autocomplete/autocomplete-item.js';
 export * from './autocomplete/autocomplete-list.js';
@@ -89,4 +91,3 @@ export * from './mwc-card.js';
 export * from './mwc-circular-progress.js';
 export * from './mwc-snackbar.js';
 export * from './mwc-top-app-bar.js';
-

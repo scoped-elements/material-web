@@ -12,6 +12,7 @@ export default {
     /lit-element/,
     /lit-html/,
     '@open-wc/scoped-elements',
+    '@webcomponents/formdata-event',
   ],
   watch: {
     include: 'src/**',
@@ -51,6 +52,7 @@ export default {
       "customElement('mwc-checkbox')": '',
       "customElement('md-ripple')": '',
       "customElement('md-list')": '',
+      "customElement('md-outlined-field')": '',
       "customElement('md-elevation')": '',
       "customElement('md-focus-ring')": '',
       "customElement('md-badge')": '',
